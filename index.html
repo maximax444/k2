@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ключевой компонент - Энергия верных
+        решений</title>
+    <link rel="icon" href="/favic.ico" type="image/x-icon">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('/fonts/Montserrat-SemiBold.eot');
+            src: url('/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+                url('/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+                url('/fonts/Montserrat-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            src: url('/fonts/OpenSans-SemiBold.eot');
+            src: url('/fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+                url('/fonts/OpenSans-SemiBold.woff2') format('woff2'),
+                url('/fonts/OpenSans-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            src: url('/fonts/OpenSans-Regular.eot');
+            src: url('/fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+                url('/fonts/OpenSans-Regular.woff2') format('woff2'),
+                url('/fonts/OpenSans-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.css"
+        integrity="sha512-Y1c7KsgMNtf7pIhrj/Ul2LhutImFYr+TsCmjB8mGAk+cgG1Vm8U1g7tvfmRr6yD5nds03Qgc6Mcb86MBKu1Llg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="fullpage">
+        <header class="header animate__animated animate__fadeInDown">
+            <div class="container">
+                <div class="header__wrap">
+                    <a href="#main" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="header__right">
+                        <ul class="header__menu">
+                            <li><a href="#about">О компании</a></li>
+                            <li><a href="#manuf">Продукция</a></li>
+                            <li><a href="#history">История</a></li>
+                            <li><a href="#struct">Структура</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                        <div class="header__contacts">
+                            <a href="tel:8 (800) 333-28-29" class="header__phone">8 (800) 333-28-29</a>
+                            <a href="" class="header__btn">Связаться</a>
+                        </div>
+                    </div>
+                    <div class="header__burg">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="main" id="main">
+            <div class="main__main">
+                <div class="container">
+                    <div class="main__top animate__animated animate__fadeInLeft">Электротехническая компания</div>
+                    <h1 class="main__title animate__animated animate__fadeInLeft">Энергия верных
+                        решений</h1>
+                </div>
+                <div class="main-bot animate__animated animate__fadeInUp">
+                    <div class="main-bot__top">
+                        <div class="main-bot__icon">RU</div>
+                        <div class="main-bot__title">Российский производитель</div>
+                    </div>
+                    <p class="main-bot__text">Мы рады вам сообщить, что АО «Хакель» запускает долгосрочный проект
+                        ребрендинга и&nbsp;обновления системы коммуникаций компании</p>
+                </div>
+            </div>
+            <div class="main__video animate__animated animate__fadeInRight">
+                <video data-videoplayer="1" muted="" playsinline="" autoplay="" preload="auto">
+                    <source src="video/main.mp4" type="video/mp4">
+                    <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
+                    <source src="video/main.webm" type="video/webm">
+                    <!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
+                </video>
+            </div>
+        </section>
+        <div class="kk">
+            <div class="container">
+                <div class="kk__top">
+                    <p class="kk__title animate__animated animate__fadeInUp wow">С 1 ноября 2023 года вся продукция,
+                        производимая АО «ХАКЕЛЬ», будет
+                        реализовываться под&nbsp;торговой маркой «КЛЮЧЕВОЙ КОМПОНЕНТ»</p>
+                    <p class="kk__descr animate__animated animate__fadeInUp wow">Новое наименование отражает важные
+                        структурные изменения как внутри компании,
+                        так и&nbsp;в&nbsp;ее роли на&nbsp;всем российском рынке электротехники</p>
+                </div>
+                <div class="kk__wrap">
+                    <div class="kk__block animate__animated animate__fadeInUp wow">
+                        <div class="kk__icon">
+                            <img src="img/kk1.svg" alt="">
+                            <span><img src="img/kk1-w.png" alt=""></span>
+                        </div>
+                        <p class="kk__text">Новый уровень локализации производства и&nbsp;разработки
+                            на&nbsp;территории РФ</p>
+                    </div>
+                    <div data-wow-delay="0.3s" class="kk__block animate__animated animate__fadeInUp wow">
+                        <div class="kk__icon">
+                            <img src="img/kk2.svg" alt="">
+                            <span><img src="img/kk2-w.svg" alt=""></span>
+                        </div>
+                        <p class="kk__text">Фокус в&nbsp;производстве
+                            на&nbsp;электротехнические
+                            и&nbsp;электронные компоненты</p>
+                    </div>
+                    <div data-wow-delay="0.6s" class="kk__block animate__animated animate__fadeInUp wow">
+                        <div class="kk__icon">
+                            <img src="img/kk3.svg" alt="">
+                            <span><img src="img/kk3-w.svg" alt=""></span>
+                        </div>
+                        <p class="kk__text">Значительное расширение ассортимента выпускаемой электротехнической
+                            продукции</p>
+                    </div>
+                    <div data-wow-delay="0.9s" class="kk__block animate__animated animate__fadeInUp wow">
+                        <div class="kk__icon">
+                            <img src="img/kk4.svg" alt="">
+                            <span><img src="img/kk4-w.svg" alt=""></span>
+                        </div>
+                        <p class="kk__text">Увеличение роли продукции нашей компании в&nbsp;поддержании технологического
+                            суверенитета
+                            и&nbsp;устойчивого развития промышленного комплекса РФ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="trans">
+            <div class="trans__bg"></div>
+            <div class="container">
+                <div class="trans__top">
+                    <div class="trans__title animate__animated animate__fadeInUp wow">При всех трансформациях неизменным
+                        остаются черты, которые многие годы
+                        делают нас надежными поставщиками и&nbsp;партнерами</div>
+                    <div data-wow-delay="0.2s" class="trans__block animate__animated animate__fadeInUp wow">
+                        <span>Гарантированный уровень поддержки</span>
+                        Мы сохраним гарантировано высокий уровень технической поддержки изделий, поставляемых под ТМ
+                        «КЛЮЧЕВОЙ КОМПОНЕНТ» («К2»),
+                        что является залогом долгосрочных и взаимовыгодных отношений
+                        с заказчиками
+                    </div>
+                    <div data-wow-delay="0.4s" class="trans__block animate__animated animate__fadeInUp wow">
+                        <span>Контроль качества</span>
+                        В особенности, максимально требовательное отношение к контролю качества выпускаемой продукции и
+                        высокий профессионализм сотрудников нашей компании
+                    </div>
+                    <div data-wow-delay="0.6" class="trans__block animate__animated animate__fadeInUp wow">
+                        <span>Корпоративная и социальная ответственность</span>
+                        Проявляя корпоративную социальную ответственность, мы продолжим все лучшие
+                        научно-исследовательские и опытно-конструкторские работы.
+                        Мы уверены в перспективах развития российского рынка электротехники
+                        и сознаем свое значение, как одного из ведущих производителей отечественной электротехнической и
+                        электронной продукции
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="about__title animate__animated animate__fadeInLeft wow">О продукции</h2>
+                <div class="about__wrap">
+                    <div class="about__block animate__animated animate__fadeInUp wow">
+                        <span class="about__icon">
+                            <img src="img/about1.svg" alt="">
+                        </span>
+                        <span class="about__descr">Уcтройства защиты от&nbsp;импульсных перенапряжений
+                            и&nbsp;помех</span>
+                        <a href="" class="about__drop">
+                            <span class="about__name">Уcтройства защиты
+                                от&nbsp;импульсных перенапряжений и&nbsp;помех</span>
+                            <span class="about__text">Устройство, которое предназначено
+                                для ограничения переходных перенапряжений и отвода импульсов тока. Это устройство
+                                содержит, по крайней мере, один нелинейный элемент</span>
+                            <span class="about__link">Перейти к продукции <img src="img/about-link.svg" alt=""></span>
+                        </a>
+                        <div class="about__more">
+                            <span>Подробнее</span>
+                            <img src="img/about-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div data-wow-delay="0.2s" class="about__block animate__animated animate__fadeInUp wow">
+                        <span class="about__icon">
+                            <img src="img/about2.svg" alt="">
+                        </span>
+                        <span class="about__descr">Щитки защиты от&nbsp;импульсных перенапряжений ЩЗИП</span>
+                        <a href="" class="about__drop">
+                            <span class="about__name">Щитки защиты от&nbsp;импульсных перенапряжений ЩЗИП</span>
+                            <span class="about__text">Устройства защиты от импульсных перенапряжений, в соответствии с
+                                зоновой концепцией молниезащиты устанавливаются на границах зон молниезащиты во
+                                вводно-распределительных устройствах, распределительных щитах или отдельных
+                                распределительных щитах</span>
+                            <span class="about__link">Перейти к продукции <img src="img/about-link.svg" alt=""></span>
+                        </a>
+                        <div class="about__more">
+                            <span>Подробнее</span>
+                            <img src="img/about-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div data-wow-delay="0.4s" class="about__block animate__animated animate__fadeInUp wow">
+                        <span class="about__icon">
+                            <img src="img/about3.svg" alt="">
+                        </span>
+                        <span class="about__descr">Устройства молниезащитные комплектные УМК</span>
+                        <a href="" class="about__drop">
+                            <span class="about__name">Устройства молниезащитные комплектные УМК</span>
+                            <span class="about__text">Удар молнии в здание (сооружение)
+                                или вблизи него является источником опасности для жизни и здоровья людей, сохранности
+                                здания (сооружения), его содержимого и инженерных сетей. Поэтому разработка и применение
+                                мер защиты
+                                от молний является очень важной задачей</span>
+                            <span class="about__link">Перейти к продукции <img src="img/about-link.svg" alt=""></span>
+                        </a>
+                        <div class="about__more">
+                            <span>Подробнее</span>
+                            <img src="img/about-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div data-wow-delay="0.6s" class="about__block animate__animated animate__fadeInUp wow">
+                        <span class="about__icon">
+                            <img src="img/about4.svg" alt="">
+                        </span>
+                        <span class="about__descr">Устройства заземляющие комплектные УЗК</span>
+                        <a href="" class="about__drop">
+                            <span class="about__name">Устройства заземляющие комплектные УЗК</span>
+                            <span class="about__text">Устройства заземляющие комплектные УЗК, ТУ 3437-009-79740390-2009
+                                предназначены для создания заземляющих устройств различного функционального назначения,
+                                конструкции и конфигурации</span>
+                            <span class="about__link">Перейти к продукции <img src="img/about-link.svg" alt=""></span>
+                        </a>
+                        <div class="about__more">
+                            <span>Подробнее</span>
+                            <img src="img/about-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div data-wow-delay="0.8s" class="about__block animate__animated animate__fadeInUp wow">
+                        <span class="about__icon">
+                            <img src="img/about5.svg" alt="">
+                        </span>
+                        <span class="about__descr">Оборудование для тестирования
+                            и&nbsp;измерений УЗИП</span>
+                        <a href="" class="about__drop">
+                            <span class="about__name">Оборудование для тестирования
+                                и&nbsp;измерений УЗИП</span>
+                            <span class="about__text">Защитное действие разрядника основано
+                                на пробое газового промежутка волной перенапряжения, при котором металлические части
+                                находящиеся под разными потенциалами кратковременно соединяются между собой, тем самым
+                                исключается возможность пробоя изолятора</span>
+                            <span class="about__link">Перейти к продукции <img src="img/about-link.svg" alt=""></span>
+                        </a>
+                        <div class="about__more">
+                            <span>Подробнее</span>
+                            <img src="img/about-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div data-wow-delay="1.0s" class="about__block animate__animated animate__fadeInUp wow">
+                        <span class="about__icon">
+                            <img src="img/about6.svg" alt="">
+                        </span>
+                        <span class="about__descr">Приборы для контроля изоляции в&nbsp;сетях
+                            с&nbsp;изолированной нейтралью</span>
+                        <a href="" class="about__drop">
+                            <span class="about__name">Приборы для контроля изоляции в&nbsp;сетях
+                                с&nbsp;изолированной нейтралью</span>
+                            <span class="about__text">Приборы для сетей переменного тока, приборы для сетей постоянного
+                                тока, приборы для контроля электроизолированных сооружений, дроссели</span>
+                            <span class="about__link">Перейти к продукции <img src="img/about-link.svg" alt=""></span>
+                        </a>
+                        <div class="about__more">
+                            <span>Подробнее</span>
+                            <img src="img/about-more.svg" alt="">
+                        </div>
+                    </div>
+                    <div data-wow-delay="1.2s" class="about__block animate__animated animate__fadeInUp wow">
+                        <span class="about__icon">
+                            <img src="img/about7.svg" alt="">
+                        </span>
+                        <span class="about__descr">Устройства промышленной автоматики</span>
+                        <a href="" class="about__drop">
+                            <span class="about__name">Устройства промышленной автоматики</span>
+                            <span class="about__text">Релейные модули, источники питания, разветвители интерфейса,
+                                диодные (резервные) модули, снабберные модули</span>
+                            <span class="about__link">Перейти к продукции <img src="img/about-link.svg" alt=""></span>
+                        </a>
+                        <div class="about__more">
+                            <span>Подробнее</span>
+                            <img src="img/about-more.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="manuf" id="manuf">
+            <div class="container">
+                <h2 class="manuf__title animate__animated animate__fadeInLeft wow">О производстве</h2>
+                <div class="manuf__top">
+                    <div class="manuf__bold animate__animated animate__fadeInUp wow"><span>Ключевой Компонент</span> —
+                        это современный производственно-офисный
+                        комплекс,
+                        общей площадью 11 000м2, расположенный в Ломоносовском районе Ленинградской области</div>
+                    <div data-wow-delay="0.3s" class="manuf__text animate__animated animate__fadeInUp wow">
+                        <p>Комплекс оснащен новейшим оборудованием для сборки электротехнической электрощитовой
+                            продукции, электротехники, приборов промышленной автоматики, компонентов систем молниезащиты
+                            и заземления.
+
+                        </p>
+                        <p>Компания обладает сильным и надежным инженерно-техническим и рабочим кадровым составом. На
+                            постоянной основе организовано обучение и повышение квалификации</p>
+                    </div>
+                </div>
+                <div class="manuf__slider swiper">
+                    <div class="swiper-wrapper">
+                        <a href="img/manuf1.png" data-fancybox="gallery" class="swiper-slide manuf-block">
+                            <img src="img/manuf1.png" alt="">
+                        </a>
+                        <a href="img/manuf2.png" data-fancybox="gallery" class="swiper-slide manuf-block">
+                            <img src="img/manuf2.png" alt="">
+                        </a>
+                        <a href="img/manuf3.png" data-fancybox="gallery" class="swiper-slide manuf-block">
+                            <img src="img/manuf3.png" alt="">
+                        </a>
+                        <a href="img/manuf4.png" data-fancybox="gallery" class="swiper-slide manuf-block">
+                            <img src="img/manuf4.png" alt="">
+                        </a>
+                        <a href="img/manuf1.png" data-fancybox="gallery" class="swiper-slide manuf-block">
+                            <img src="img/manuf1.png" alt="">
+                        </a>
+                        <a href="img/manuf2.png" data-fancybox="gallery" class="swiper-slide manuf-block">
+                            <img src="img/manuf2.png" alt="">
+                        </a>
+                        <a href="img/manuf3.png" data-fancybox="gallery" class="swiper-slide manuf-block">
+                            <img src="img/manuf3.png" alt="">
+                        </a>
+                        <a href="img/manuf4.png" data-fancybox="gallery" class="swiper-slide manuf-block">
+                            <img src="img/manuf4.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="manuf__arrows arrows">
+                    <div class="manuf__prev prev">
+                        <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.58166 10.5116L3.60332 6.53322L20.4667 6.53332L20.4667 5.06963L3.60332 5.06973L7.58166 1.09139L6.54661 0.0563442L0.801477 5.80148L6.54661 11.5466L7.58166 10.5116Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="manuf__next next">
+                        <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.4183 1.48844L17.3967 5.46678L0.533324 5.46668V6.93037L17.3967 6.93027L13.4183 10.9086L14.4534 11.9437L20.1985 6.19852L14.4534 0.453389L13.4183 1.48844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="serts">
+            <div class="container">
+                <h2 class="serts__title animate__animated animate__fadeInLeft wow">Сертификаты</h2>
+                <div class="serts__wrap">
+                    <div class="serts__left animate__animated animate__fadeInUp wow">
+                        <div class="serts__tabs">
+                            <div class="serts__tab active">Дилерские сертификаты</div>
+                            <div class="serts__tab">Сертификаты соответствия системы
+                                менеджмента качества</div>
+                            <div class="serts__tab">Сертификаты о происхождении товара</div>
+                            <div class="serts__tab">Сертификаты соответствия системы ИНТЕРГАЗСЕРТ</div>
+                            <div class="serts__tab">Cертификаты и декларации соответствия требованиям Технических
+                                регламентов Таможенного союза</div>
+                            <div class="serts__tab">Щитки защиты от импульсных перенапряжений низковольтные комплектные
+                                ЩЗИП, ТУ 3434-001-79740390-2007</div>
+                            <div class="serts__tab">Устройства защиты от импульсных перенапряжений, ТУ
+                                3428-002-79740390-2007</div>
+                            <div class="serts__tab">Устройства защиты от импульсных перенапряжений, ТУ
+                                3428-015-7970390-2016</div>
+                            <div class="serts__tab">Приборы для диагностики устройств защиты
+                                от импульсных перенапряжений,
+                                ТУ 4220-003-79740390-2009, ТУ 4226-012-79740390-2014</div>
+                            <div class="serts__tab">Приборы контроля сопротивления изоляции,
+                                ТУ 4220-004-79740390-2009</div>
+                            <div class="serts__tab">Устройства комплектные низковольтные,
+                                ТУ 27.12.31-023-79740390-2020</div>
+                            <div class="serts__tab">Устройства заземляющие комплектные УЗК,
+                                ТУ 3437-009-79740390-2009</div>
+                            <div class="serts__tab">Устройства молниезащитные комплектные
+                                УМК, ТУ 3437-010-79740390-2009</div>
+                            <div class="serts__tab">Релейные модули, РБНМ.647611.001 ТУ</div>
+                            <div class="serts__tab">Разделительные искровые разрядники</div>
+                            <div class="serts__tab">Выписки из реестров</div>
+                        </div>
+                        <div class="serts__copy">
+                            <img src="img/serts-copy1.png" alt="">
+                            <img src="img/serts-copy2.png" alt="">
+                            <img src="img/serts-copy3.png" alt="">
+                            <img src="img/serts-copy4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="serts__cont animate__animated animate__fadeInRight wow">
+                        <div class="serts__cont-block active">
+                            <div class="serts__main">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="img/serts1.png" data-pdf="img/serts1.png" data-fancybox
+                                            class="swiper-slide serts__block">
+                                            <img src="img/serts1.png" alt="">
+                                        </a>
+                                        <a href="img/serts2.png" data-pdf="img/serts2.png" data-fancybox
+                                            class="swiper-slide serts__block">
+                                            <img src="img/serts2.png" alt="">
+                                        </a>
+                                        <a href="img/serts1.png" data-pdf="img/serts1.png" data-fancybox
+                                            class="swiper-slide serts__block">
+                                            <img src="img/serts1.png" alt="">
+                                        </a>
+                                        <a href="img/serts2.png" data-pdf="img/serts2.png" data-fancybox
+                                            class="swiper-slide serts__block">
+                                            <img src="img/serts2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="serts__bot">
+                                    <a href="img/serts1.png" class="serts__down" download><img src="img/serts-down.svg"
+                                            alt="">Скачать</a>
+                                    <div class="serts__arrows">
+                                        <div class=" prev">
+                                            <svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.58166 10.5116L3.60332 6.53322L20.4667 6.53332L20.4667 5.06963L3.60332 5.06973L7.58166 1.09139L6.54661 0.0563442L0.801477 5.80148L6.54661 11.5466L7.58166 10.5116Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </div>
+                                        <div class=" next">
+                                            <svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.4183 1.48844L17.3967 5.46678L0.533324 5.46668V6.93037L17.3967 6.93027L13.4183 10.9086L14.4534 11.9437L20.1985 6.19852L14.4534 0.453389L13.4183 1.48844Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serts__cont-block">
+                            <div class="serts__main">
+                                <div class="swiper">
+                                    <div class="swiper-wrapper">
+                                        <a href="img/serts2.png" data-pdf="img/serts2.png" data-fancybox
+                                            class="swiper-slide serts__block">
+                                            <img src="img/serts2.png" alt="">
+                                        </a>
+                                        <a href="img/serts1.png" data-pdf="img/serts1.png" data-fancybox
+                                            class="swiper-slide serts__block">
+                                            <img src="img/serts1.png" alt="">
+                                        </a>
+                                        <a href="img/serts1.png" data-pdf="img/serts1.png" data-fancybox
+                                            class="swiper-slide serts__block">
+                                            <img src="img/serts1.png" alt="">
+                                        </a>
+                                        <a href="img/serts2.png" data-pdf="img/serts2.png" data-fancybox
+                                            class="swiper-slide serts__block">
+                                            <img src="img/serts2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="serts__bot">
+                                    <a href="img/serts1.png" class="serts__down" download><img src="img/serts-down.svg"
+                                            alt="">Скачать</a>
+                                    <div class="serts__arrows">
+                                        <div class=" prev">
+                                            <svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.58166 10.5116L3.60332 6.53322L20.4667 6.53332L20.4667 5.06963L3.60332 5.06973L7.58166 1.09139L6.54661 0.0563442L0.801477 5.80148L6.54661 11.5466L7.58166 10.5116Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </div>
+                                        <div class=" next">
+                                            <svg width="21" height="12" viewBox="0 0 21 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M13.4183 1.48844L17.3967 5.46678L0.533324 5.46668V6.93037L17.3967 6.93027L13.4183 10.9086L14.4534 11.9437L20.1985 6.19852L14.4534 0.453389L13.4183 1.48844Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="serts__cont-block">3</div>
+                        <div class="serts__cont-block">4</div>
+                        <div class="serts__cont-block">5</div>
+                        <div class="serts__cont-block">6</div>
+                        <div class="serts__cont-block">7</div>
+                        <div class="serts__cont-block">8</div>
+                        <div class="serts__cont-block">9</div>
+                        <div class="serts__cont-block">10</div>
+                        <div class="serts__cont-block">11</div>
+                        <div class="serts__cont-block">12</div>
+                        <div class="serts__cont-block">13</div>
+                        <div class="serts__cont-block">14</div>
+                        <div class="serts__cont-block">15</div>
+                        <div class="serts__cont-block">16</div>
+                    </div>
+                    <div class="serts__end">
+                        <img src="img/serts-copy1.png" alt="">
+                        <img src="img/serts-copy2.png" alt="">
+                        <img src="img/serts-copy3.png" alt="">
+                        <img src="img/serts-copy4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="history" id="history">
+            <div class="history__bg">
+                <img src="img/history-bg.svg" alt="">
+            </div>
+            <div class="container">
+                <h2 class="history__title animate__animated animate__fadeInLeft wow">История компании</h2>
+                <div class="history__slider swiper animate__animated animate__fadeInUp wow">
+                    <div class="history__nav"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2023</div>
+                            <p class="history__text"> Ребрендинг: Ключевой Компонент (К2) стал основным брендом
+                                предприятия. В продуктовом портфеле АО «Хакель» по-прежнему остаются торговые марки
+                                hakel, ГРОЗОСТОП, БЛИЦ и др.</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2022</div>
+                            <p class="history__text"> АО «Хакель» отметило 20-тилетие.</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2021</div>
+                            <p class="history__text"> Открытие завода АО "Хакель" на территории промзоны «Горелово».</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2020</div>
+                            <p class="history__text"> 28 декабря. Запуск в эксплуатацию производственно-офисного
+                                комплекса компании АО «Хакель» в индустриальном парке «Гринстейт».</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2019</div>
+                            <p class="history__text"> 13 августа, закладки капсулы времени в основание строящегося
+                                производственно-офисного комплекса АО «Хакель» в поселке Горелово Ленинградской области.
+                            </p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2019</div>
+                            <p class="history__text"> Производится более 1000 типов УЗИП предназначенных для защиты
+                                любого объекта или оборудования по всем возможным путям проникновения токов, создающих
+                                опасные импульсные перенапряжения. Изготавливается более 50 типов ЩЗИП®. Поставлено
+                                более 2000 комплектов УЗК и укомплектовано УМК более 200 объектов.</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2018</div>
+                            <p class="history__text"> Начало производства варисторов.</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2016</div>
+                            <p class="history__text"> Начало производства устройств промышленной автоматики.</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2013</div>
+                            <p class="history__text"> Начало поставок электролитических заземлителей.</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2013 </div>
+                            <p class="history__text">Компания стала со 100% российским участием.</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2010 </div>
+                            <p class="history__text">Создание испытательной лаборатории для проведения испытательных и
+                                опытно-конструкторских работ по усовершенствованию существующих моделей и разработке
+                                новых типов УЗИП и ЩЗИП®, а также для проведения выходного контроля качества выпускаемой
+                                продукции.</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2009 </div>
+                            <p class="history__text">Создание производственной базы и начало производства УЗИП.</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2007 </div>
+                            <p class="history__text">Создание производственной базы и начало производства ЩЗИП®.
+                                Организация собственного инжинирингового центра и отдела разработок.</p>
+                        </div>
+                        <div class="swiper-slide history__block">
+                            <div class="history__date">2002</div>
+                            <p class="history__text">Основание компании в г. Санкт-Петербург как официального
+                                представителя чешского производителя электротехнической продукции Hakel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="container">
+                <div class="clients__top">
+                    <h2 class="clients__title animate__animated animate__fadeInLeft wow">Клиенты компании</h2>
+                    <p data-wow-delay="0.3s" class="clients__descr animate__animated animate__fadeInUp wow">Наши
+                        партнёры доверяют качеству продукции компании на&nbsp;протяжении
+                        долгих лет</p>
+                </div>
+            </div>
+            <div class="clients__main">
+                <div class="container">
+                    <div class="clients__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients1.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients2.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients3.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients4.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients5.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients6.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients7.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients8.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients9.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients10.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients11.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients12.png" alt="">
+                            </div>
+                            <div class="swiper-slide clients__block">
+                                <img src="img/clients13.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="clients__arrows arrows">
+                    <div class="clients__prev prev">
+                        <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.58166 10.5116L3.60332 6.53322L20.4667 6.53332L20.4667 5.06963L3.60332 5.06973L7.58166 1.09139L6.54661 0.0563442L0.801477 5.80148L6.54661 11.5466L7.58166 10.5116Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                    <div class="clients__next next">
+                        <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.4183 1.48844L17.3967 5.46678L0.533324 5.46668V6.93037L17.3967 6.93027L13.4183 10.9086L14.4534 11.9437L20.1985 6.19852L14.4534 0.453389L13.4183 1.48844Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="struct" id="struct">
+            <div class="container">
+                <div class="struct__top animate__animated animate__fadeInLeft wow">
+                    <div class="struct__logo"><img src="img/struct-logo.svg" alt=""></div>
+                    <h2 class="struct__title">Структура производства</h2>
+
+                </div>
+                <div class="struct__wrap ">
+                    <div class="struct__block animate__animated animate__fadeInUp wow">Служба R&D</div>
+                    <div data-wow-delay="0.8s" class="struct__block animate__animated animate__fadeInUp wow">
+                        Производственный комплекс электронных
+                        компонентов</div>
+                    <div data-wow-delay="0.2s" class="struct__block animate__animated animate__fadeInUp wow">
+                        Испытательная лаборатория</div>
+                    <div data-wow-delay="1.0s" class="struct__block animate__animated animate__fadeInUp wow">Участок
+                        выводного монтажа</div>
+                    <div data-wow-delay="0.4s" class="struct__block animate__animated animate__fadeInUp wow">Служба
+                        качества</div>
+                    <div data-wow-delay="1.2s" class="struct__block animate__animated animate__fadeInUp wow">Участок
+                        поверхностного монтажа</div>
+                    <div data-wow-delay="0.6s" class="struct__block animate__animated animate__fadeInUp wow">Участок
+                        производства элементов
+                        для&nbsp;устройств заземляющих комплектных и&nbsp;устройств молниезащитных комплектных</div>
+                    <div data-wow-delay="1.4s" class="struct__block animate__animated animate__fadeInUp wow">Участок
+                        нанесения защитных покрытий
+                    </div>
+                </div>
+            </div>
+            <div class="struct__imgs animate__animated animate__fadeInRight wow">
+                <div class="struct__img">
+                    <img src="img/struct1.svg" alt="">
+                </div>
+                <div class="struct__img">
+                    <img src="img/struct2.svg" alt="">
+                </div>
+                <div class="struct__img">
+                    <img src="img/struct3.svg" alt="">
+                </div>
+                <div class="struct__img">
+                    <img src="img/struct4.svg" alt="">
+                </div>
+                <div class="struct__img">
+                    <img src="img/struct5.svg" alt="">
+                </div>
+                <div class="struct__img">
+                    <img src="img/struct6.svg" alt="">
+                </div>
+                <div class="struct__img">
+                    <img src="img/struct7.svg" alt="">
+                </div>
+                <div class="struct__img">
+                    <img src="img/struct8.svg" alt="">
+                </div>
+                <img src="img/struct0.svg" alt="">
+            </div>
+        </section>
+        <section class="mark">
+            <div class="container">
+                <h2 class="mark__title animate__animated animate__fadeInLeft wow">Мы разрабатываем и&nbsp;реализуем
+                    продукцию под&nbsp;торговыми марками</h2>
+                <div class="mark__wrap">
+                    <div class="mark__block">
+                        <img src="img/mark1.svg" alt="">
+                    </div>
+                    <div class="mark__block">
+                        <img src="img/mark2.svg" alt="">
+                    </div>
+                    <div class="mark__block">
+                        <img src="img/mark3.svg" alt="">
+                    </div>
+                    <div class="mark__block">
+                        <img src="img/mark4.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <h2 class="contacts__title animate__animated animate__fadeInLeft wow">Контакты</h2>
+                <div class="contacts__wrap">
+                    <div class="contacts__block animate__animated animate__fadeInUp wow">
+                        <div class="contacts__icon">
+                            <img src="img/contacts1.svg" alt="">
+                        </div>
+                        <div class="contacts__name">Адрес</div>
+                        <p class="contacts__text">188510, Ленинградская область, Ломоносовский муниципальный район,
+                            Виллозское городское поселение,
+                            <br> тер. Южная часть производственной зоны Горелово, улица Сименса, д. 2/4 пом.314
+                            <br> пом. 302 : коммерческий отдел
+                            <br> пом. 121 : склад
+                        </p>
+                    </div>
+                    <div data-wow-delay="0.3s" class="contacts__block animate__animated animate__fadeInUp wow">
+                        <div class="contacts__icon">
+                            <img src="img/contacts2.svg" alt="">
+                        </div>
+                        <div class="contacts__name">Почтовый адрес</div>
+                        <p class="contacts__text">198515, Санкт-Петербург, а/я 19</p>
+                        <div class="contacts__name">Электронная почта</div>
+                        <p class="contacts__text"><a href="mailto:info@hakel.ru">info@hakel.ru</a></p>
+                    </div>
+                    <div data-wow-delay="0.6s" class="contacts__block animate__animated animate__fadeInUp wow">
+                        <div class="contacts__icon">
+                            <img src="img/contacts3.svg" alt="">
+                        </div>
+                        <div class="contacts__name">Телефон/факс многоканальный</div>
+                        <p class="contacts__text">
+                            <a href="">8 (800) 333-28-29</a>
+                            <a href="">+7 (812) 207-47-05</a>
+                            <a href="">+7 (495) 984-00-66</a>
+                        </p>
+                    </div>
+                    <div data-wow-delay="0.9s" class="contacts__block animate__animated animate__fadeInUp wow">
+                        <div class="contacts__icon">
+                            <img src="img/contacts4.svg" alt="">
+                        </div>
+                        <div class="contacts__name">Время работы</div>
+                        <p class="contacts__text"><span>пн-чт 9.15-18.00, без обеда</span>
+                            <span>пт 9.15-16.45, без обеда</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="map" class="contacts__map animate__animated animate__fadeInUp wow"></div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <a href="#main" class="footer__logo">
+                        <img src="img/footer-logo.svg" alt="">
+                    </a>
+                    <ul class="footer__menu">
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#manuf">Продукция</a></li>
+                        <li><a href="#history">История</a></li>
+                        <li><a href="#struct">Структура</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                    <a href="" class="end__polit">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="end">
+                <div class="container">
+                    <div class="end__wrap">
+                        <div class="end__copy">АО «Хакель»</div>
+                        <div class="end__right">
+                            <a href="" class="end__polit">Политика конфиденциальности</a>
+                            <a href="https://versality.ru/" target="_blank" class="end__dev">
+                                Разработка сайта
+                                <img src="img/hero-logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="overlay overlay-call">
+            <div class="popup">
+                <div class="overlay-call__close">
+                    <img src="img/close.svg" alt="">
+                </div>
+                <div class="overlay-call__title">Заказать звонок</div>
+                <form action="" class="overlay-call__form">
+                    <input type="text" placeholder="Ваше имя*" required>
+                    <input type="tel" placeholder="Телефон*" onkeypress="noWw(event)" required>
+                    <input type="email" placeholder="Е-mail">
+                    <input type="text" placeholder="Удобное время для звонка">
+                    <input type="text" placeholder="Ваш вопрос">
+                    <div class="overlay-call__bot">
+                        <label class="overlay-call__check">
+                            <input type="checkbox" name="" id="" checked required>
+                            <span></span>
+                            <p>Согласен с <a href="">политикой конфиденциальности</a> и <a href="">обработки
+                                    персональных данных</a></p>
+                        </label>
+                        <button class="overlay-call__btn">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"
+        type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"
+        integrity="sha512-+z66PuMP/eeemN2MgRhPvI3G15FOBbsp5NcCJBojg6dZBEFL0Zoi0PEGkhjubEcQF7N1EpTX15LZvfuw+Ej95Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="
+        https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js
+        "></script>
+    <script>
+        new WOW({
+            mobile: false,
+        }).init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

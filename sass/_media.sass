@@ -1,0 +1,358 @@
+@media(max-width: 1299px)
+    .struct
+        &__imgs
+            right: -70px
+@media(max-width: 1199px)
+    .serts
+        &__left
+            width: 40%
+        &__tabs
+            grid-gap: 20px
+        &__cont
+            width: 60%
+        &__main
+            padding-left: 20px
+    .about
+        &__wrap
+            grid-template-columns: repeat(2,1fr)
+        &__block
+            &:nth-child(2n)
+                border-right: 0
+            &:nth-child(5), &:nth-child(6)
+                border-bottom: 1px solid #D9D9D9
+    .trans
+        &__block
+            padding-right: 40px
+        &__title
+            padding-right: 40px
+    .struct
+        &__wrap
+            width: 540px
+        &__imgs
+            right: -200px
+    .contacts
+        &__wrap
+            flex-wrap: wrap
+        &__block
+            width: 50%
+            border-top: 1px solid #D9D9D9
+            &:nth-child(3)
+                padding-left: 0
+            &:nth-child(2)
+                border-right: 0
+                border-top: 0
+            &:nth-child(1)
+                border-top: 0
+@media(max-width: 991px)
+    .serts
+        &__wrap
+            display: block
+        &__left
+            width: 100%
+            border-right: 0
+        &__copy
+            display: none
+        &__cont
+            width: 100%
+        &__main
+            padding-left: 0
+        &__end
+            display: flex
+            align-items: center
+            grid-gap: 10px
+            padding-top: 35px
+    .kk
+        padding-top: 40px
+        &__top
+            display: block
+        &__title
+            padding: 0
+            margin: 0
+            border-right: 0
+            width: 100%
+            margin-bottom: 26px
+        &__descr
+            padding: 0
+            width: 100%
+            margin-bottom: 40px
+        &__wrap
+            flex-wrap: wrap
+            margin-left: 0
+        &__block
+            width: 50%
+    .trans
+        &__title
+            padding-right: 0
+            width: 100%
+        &__block
+            padding-right: 0
+            width: 100%
+        &__bg
+            width: 1200px
+            left: 50%
+            margin-left: -600px
+    .manuf
+        &__top
+            display: block
+            margin-bottom: 0
+            border-bottom: 0
+        &__bold
+            border-right: 0
+            padding-right: 0
+            width: 100%
+            padding-bottom: 25px
+        &__text
+            padding: 0
+            width: 100%
+            margin-bottom: 40px
+            border-bottom: 0
+    .struct
+        &__imgs
+            position: relative
+            right: 0
+            top: 0
+@media(max-width: 767px)
+    .about
+        &__wrap
+            grid-template-columns: repeat(1, 1fr)
+        &__block
+            border-right: 0
+            padding: 37px 44px
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            &:nth-child(7), &:nth-child(8)
+                border-bottom: 1px solid #D9D9D9
+            &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+                .about__drop
+                    top: auto
+                    bottom: 0
+                    border-radius: 0px 0px 20px 20px
+            &.active
+                .about__drop
+                    display: block
+                .about__more img
+                    transform: rotate(180deg)
+        &__drop
+            position: relative
+            opacity: 1
+            margin-top: 28px
+            height: auto
+            min-height: 0
+            padding-bottom: 80px
+            display: none
+        &__icon
+            margin-bottom: 0
+            display: flex
+        &__descr
+            margin-left: 18px
+            width: calc(100% - 90px)
+        &__more
+            display: flex
+            justify-content: flex-end
+            padding-right: 2px
+            grid-gap: 6px
+            align-items: center
+            font-size: 14px
+            line-height: 32px
+            color: #202975
+            width: 110px
+            position: absolute
+            bottom: -13px
+            z-index: 2
+            right: 0
+            background-color: #fff
+            img
+                transition: all 0.3s
+    .clients
+        &__top
+            flex-direction: column
+            grid-gap: 28px
+    .mark
+        &__wrap
+            flex-wrap: wrap
+            border-bottom: 0
+        &__block
+            width: 50%
+            border-bottom: 1px solid #D9D9D9
+            &:nth-child(2)
+                border-right: 0
+@media(max-width: 575px)
+    .serts
+        padding-top: 55px
+        padding-bottom: 40px
+        &__end
+            justify-content: center
+        &__title
+            font-size: 32px
+            line-height: 39px
+            margin-bottom: 29px
+        &__tabs
+            columns: auto
+        &__bot
+            justify-content: center
+        .prev
+            position: absolute
+            top: 137px
+            left: 0
+            z-index: 2
+            width: 48px
+            height: 30px
+        .next
+            position: absolute
+            top: 137px
+            right: 0
+            z-index: 2
+            width: 48px
+            height: 30px
+        .swiper
+            width: 220px
+        .swiper-slide
+            height: 300px
+            img
+                border-radius: 15px
+                width: 220px
+                height: 300px
+                object-fit: cover
+                transition: all 0.3s
+            &.swiper-slide-active
+                img
+                    width: 220px
+                    height: 300px
+        &__main
+            position: relative
+    .about
+        padding-top: 44px
+        &__title
+            font-size: 32px
+            line-height: 39px
+            margin-bottom: 7px
+        &__block
+            padding: 42px 0
+    .kk
+        &__title
+            font-size: 20px
+            line-height: 28px
+        &__wrap
+            margin-left: -20px
+            margin-right: -20px
+        &__block
+            border-right: 0
+            width: 100%
+            display: flex
+            padding: 34px 20px
+        &__icon
+            width: 90px
+            margin-right: 34px
+            img
+                width: 100%
+        &__text
+            width: calc(100% - 124px )
+    .trans
+        padding-top: 18px
+        padding-bottom: 250px
+        &__title
+            font-size: 20px
+            line-height: 28px
+        &__bg
+            margin-left: -400px
+    .manuf
+        padding-top: 44px
+        &__title
+            margin-bottom: 23px
+            font-size: 32px
+            line-height: 39px
+        &__bold
+            font-size: 20px
+            line-height: 28px
+    .history
+        padding-top: 60px
+        &__bg
+            width: 1200px
+            left: 50%
+            margin-left: -600px
+        &__title
+            font-size: 32px
+            line-height: 39px
+            margin-bottom: 44px
+        &__nav
+            width: 90%
+            left: 5%
+            margin-left: 0
+        &__block
+            min-height: 0
+            padding-bottom: 150px
+            &::before
+                bottom: auto
+                top: 30px
+    .clients
+        padding-top: 54px
+        &__title
+            font-size: 28px
+            line-height: 28px
+        &__top
+            margin-bottom: 52px
+        &__block
+            height: 132px
+    .struct
+        padding-bottom: 0
+        padding-top: 52px
+        &__top
+            margin-bottom: 29px
+        &__title
+            font-size: 32px
+            line-height: 39px
+        &__logo
+            display: none
+        &__imgs
+            width: 100%
+            img
+                max-width: 100%
+        &__wrap
+            width: 100%
+        &__block
+            width: 100%
+            padding-left: 0
+            padding-right: 0
+            border-left: 0
+            &::before
+                display: none
+            &:nth-child(2n)
+                width: 100%
+            &:hover
+                color: #000000
+                background: transparent
+    .mark
+        &__title
+            font-size: 20px
+            line-height: 28px
+            margin-bottom: 25px
+        &__block
+            height: 120px
+            img
+                max-width: 80%
+                max-height: 80%
+    .contacts
+        padding-top: 52px
+        &__title
+            margin-bottom: 4px
+            font-size: 32px
+            line-height: 39px
+        &__block
+            padding: 38px 20px
+            padding-bottom: 16px
+            padding-left: 97px
+            padding-right: 8px
+            margin-left: -20px
+            margin-right: -20px
+            width: calc(100% + 30px)
+            border-right: 0
+            border-top: 0
+            border-bottom: 1px solid #D9D9D9
+            position: relative
+            &:nth-child(2n + 1)
+                padding-left: 97px
+        &__icon
+            position: absolute
+            top: 38px
+            left: 20px

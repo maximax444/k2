@@ -1,0 +1,132 @@
+.overlay
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(4, 12, 30, 0.9)
+    z-index: 11
+    display: none
+    justify-content: center
+    align-items: center
+    &-active
+        display: flex
+    &-call
+        .popup
+            width: 972px
+            max-width: 95%
+            background: #FFFFFF
+            padding: 77px 100px
+            position: relative
+        &__title
+            margin-bottom: 62px
+            font-family: 'Montserrat'
+            text-align: center
+            font-weight: 600
+            font-size: 32px
+            line-height: 30px
+        &__close
+            position: absolute
+            top: 25px
+            right: 25px
+            padding: 10px
+            cursor: pointer
+        &__form
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            grid-gap: 35px 0
+            &> input
+                width: 325px
+                max-width: 48%
+                border: 0
+                border-bottom: 1px solid #D9D9D9
+                padding: 19px 0
+                font-weight: 400
+                font-size: 14px
+                line-height: 19px
+                color: #000000
+                &:nth-child(5)
+                    width: 100%
+                    max-width: 100%
+        &__bot
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+        &__check
+            display: flex
+            align-items: center
+            grid-gap: 13px
+            position: relative
+            max-width: calc(100% - 240px)
+            input
+                position: absolute
+                top: 0
+                left: 0
+                width: 0
+                height: 0
+                overflow: hidden
+                visibility: hidden
+                opacity: 0
+                &:checked+span
+                    width: 10px
+                    height: 8px
+                    background: url('../img/check.svg')
+            p
+                font-size: 11px
+                line-height: 14px
+                margin: 0
+                max-width: calc(100% - 23px)
+                a
+                    color: #000000
+                    text-decoration: none
+                    border-bottom: 1px solid #000
+                    &:hover
+                        color: #CD072D
+                        border-bottom: 1px solid #CD072D
+        &__btn
+            background: #CD072D
+            border-radius: 5px
+            padding: 11px 42px
+            font-weight: 400
+            font-size: 14px
+            line-height: 18px
+            color: #FFFFFF
+            text-decoration: none
+            transition: all 0.3s
+            cursor: pointer
+            border: 0
+            &:hover
+                background: darken(#CD072D, 5)
+@media(max-width: 767px)
+    .overlay
+        &-call
+            padding: 100px 0
+            align-items: flex-start
+            overflow-y: scroll
+            .popup
+                padding: 42px 20px
+            &__form
+                grid-gap: 20px
+                &>input
+                    width: 100%
+                    max-width: 100%
+            &__bot
+                display: block
+            &__btn
+                margin-top: 20px
+            &__check
+                max-width: 100%
+                width: 268px
+@media(max-width: 575px)
+    .overlay
+        &-call
+            &__close
+                top: 10px
+                right: 10px
+            &__title
+                margin-bottom: 40px
+            &__form
+                &>input
+                    padding: 12px 0

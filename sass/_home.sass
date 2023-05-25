@@ -1,0 +1,647 @@
+
+.kk
+    &__top
+        display: flex
+        align-items: center
+    &__title
+        width: 50%
+        font-weight: 600
+        font-size: 24px
+        line-height: 32px
+        color: #000000
+        padding: 70px 0
+        padding-right: 80px
+        border-right: 1px solid #D9D9D9
+        margin: 0
+    &__descr
+        width: 50%
+        margin: 0
+        padding-bottom: 25px
+        padding-left: 32px
+    &__wrap
+        display: flex
+        border-left: 1px solid #D9D9D9
+        margin-left: -1px
+    &__icon
+        height: 125px
+        display: flex
+        align-items: center
+        margin-bottom: 33px
+        position: relative
+        span
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            opacity: 0
+            transition: all 0.3s
+    &__text
+        font-weight: 400
+        font-size: 14px
+        line-height: 22px
+        color: #000000
+        transition: all 0.3s
+    &__block
+        width: 25%
+        border-top: 1px solid #D9D9D9
+        padding: 34px 29px
+        border-right: 1px solid #D9D9D9
+        position: relative
+        overflow: hidden
+        &::before
+            content: ""
+            z-index: -1
+            display: block
+            transition: all 0.3s
+            width: 100%
+            height: 100%
+            position: absolute
+            top: -100%
+            left: 0
+            border-radius: 0px 0px 20px 20px
+            opacity: 1
+        &:nth-child(1)
+            &::before
+                background: #CD072D url('../img/kk-bg1.svg') top center
+        &:nth-child(2)
+            &::before
+                background: #CD072D url('../img/kk-bg2.svg') top center
+        &:nth-child(3)
+            &::before
+                background: #CD072D url('../img/kk-bg3.svg') top center
+        &:nth-child(4)
+            &::before
+                background: #CD072D url('../img/kk-bg4.svg') top center
+        &:hover
+            &::before
+                top: 0
+            .kk
+                &__text
+                    color: #fff
+                &__icon
+                    span
+                        opacity: 1
+.trans
+    padding-bottom: 280px
+    padding-top: 120px
+    position: relative
+    &__bg
+        position: absolute
+        width: 110%
+        height: 100%
+        z-index: -1
+        background: url('../img/trans-bg.svg') bottom center no-repeat
+        background-size: contain
+        bottom: 0
+        left: 0
+    &__top
+        display: flex
+        flex-wrap: wrap
+        grid-gap: 42px 0
+    &__title
+        font-weight: 600
+        font-size: 24px
+        line-height: 32px
+        color: #000000
+        width: 50%
+        padding-right: 100px
+    &__block
+        width: 50%
+        padding-left: 30px
+        position: relative
+        font-size: 14px
+        padding-right: 100px
+        line-height: 22px
+        span
+            display: block
+            margin-bottom: 14px
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+        &::before
+            content: ""
+            display: block
+            width: 14px
+            height: 14px
+            background: #CD072D
+            border-radius: 1.55px
+            position: absolute
+            top: 4px
+            left: 0
+.about
+    padding-top: 66px
+    &__more
+        display: none
+    &__title
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 52px
+        line-height: 63px
+        color: #000000
+        margin-bottom: 94px
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+    &__block
+        padding: 29px 47px
+        padding-top: 42px
+        text-decoration: none
+        position: relative
+    &__icon
+        display: block
+        margin-bottom: 27px
+    &__descr
+        display: block
+        font-size: 14px
+        line-height: 22px
+        color: #000000
+    &__drop
+        width: 100%
+        text-decoration: none
+        min-height: 264px
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        background: #13367C
+        border-radius: 0px 0px 20px 20px
+        color: #fff
+        padding: 26px 32px
+        opacity: 0
+        transition: all 0.3s
+        z-index: 2
+        padding-bottom: 60px
+    &__name
+        font-family: 'Montserrat'
+        display: block
+        margin-bottom: 14px
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+    &__text
+        font-weight: 400
+        font-size: 11px
+        line-height: 16px
+        display: block
+    &__link
+        display: flex
+        align-items: center
+        grid-gap: 12px
+        font-size: 14px
+        line-height: 19px
+        position: absolute
+        bottom: 32px
+        left: 32px
+        transition: all 0.3s
+        &:hover
+            grid-gap: 20px
+    &__block
+        border-bottom: 1px solid #D9D9D9
+        border-right: 1px solid #D9D9D9
+        cursor: pointer
+        &:nth-child(4n)
+            border-right: 0
+        &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8)
+            border-bottom: 0
+        &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)
+            .about__drop
+                top: auto
+                bottom: 0
+                border-radius: 20px 20px 0px 0px
+.manuf
+    padding-top: 107px
+    padding-bottom: 75px
+    &__top
+        display: flex
+        border-bottom: 1px solid #D9D9D9
+        margin-bottom: 58px
+    &__title
+        margin-top: 0
+        margin-bottom: 47px
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 52px
+        line-height: 63px
+    &__bold
+        border-right: 1px solid #D9D9D9
+        padding-bottom: 52px
+        padding-right: 70px
+        font-family: 'Montserrat'
+        font-style: normal
+        font-weight: 600
+        font-size: 24px
+        line-height: 32px
+        width: 50%
+        span
+            color: #13367C
+    &__text
+        width: 50%
+        padding-left: 30px
+        p
+            margin: 0
+            margin-bottom: 22px
+            font-size: 14px
+            line-height: 22px
+    &__arrows
+        display: flex
+        justify-content: flex-end
+        grid-gap: 10px
+        padding-top: 28px
+    &__slider
+        border-radius: 15px
+    &-block
+        display: flex
+        height: 200px
+        position: relative
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &::after
+            content: ""
+            display: block
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            background: url('../img/manuf-after.svg') center no-repeat
+            background-size: cover
+            transition: all 0.3s
+            opacity: 0
+        &:hover
+            &::after
+                opacity: 1
+.history
+    padding-top: 92px
+    position: relative
+    overflow: hidden
+    &__slider
+        overflow: visible
+    &__nav
+        width: 460px
+        position: absolute
+        bottom: 36px
+        left: 50%
+        margin-left: -230px
+        background: #FFFFFF
+        border: 1px solid #D9D9D9
+        border-radius: 19px
+        height: 8px
+        z-index: 10
+        .swiper-scrollbar-drag
+            height: 12px
+            background: #CD072D
+            border-radius: 19px
+            margin-top: -3px
+    &__title
+        margin: 0
+        margin-bottom: 77px
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 52px
+        line-height: 63px
+    &__bg
+        position: absolute
+        bottom: 0
+        left: -5%
+        width: 110%
+        display: flex
+        img
+            width: 100%
+    &__block
+        min-height: 409px
+        padding-left: 29px
+        padding-right: 24px
+        position: relative
+        &::before
+            content: ""
+            display: block
+            width: 1px
+            height: 380px
+            background: #D9D9D9
+            position: absolute
+            bottom: 0
+            left: 0
+    &__date
+        margin-bottom: 30px
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 52px
+        line-height: 63px
+        color: #A2B3D1
+        position: relative
+        &::before
+            content: ""
+            display: block
+            background: #13367C
+            height: 13px
+            width: 13px
+            border-radius: 3px
+            position: absolute
+            left: -35px
+            top: 23px
+    &__text
+        margin: 0
+        font-size: 14px
+        line-height: 22px
+.clients
+    padding-top: 76px
+    &__main
+        border-top: 1px solid #D9D9D9
+        border-bottom: 1px solid #D9D9D9
+    &__block
+        height: 180px
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            max-width: 100%
+            max-height: 95%
+    &__top
+        display: flex
+        grid-gap: 70px
+        margin-bottom: 45px
+    &__title
+        margin: 0
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 32px
+        line-height: 36px
+    &__descr
+        font-size: 14px
+        line-height: 22px
+        max-width: 410px
+        margin: 0
+    &__arrows
+        display: flex
+        justify-content: flex-end
+        grid-gap: 10px
+        padding-top: 22px
+.struct
+    padding-top: 94px
+    padding-bottom: 64px
+    position: relative
+    &__top
+        display: flex
+        align-items: center
+        grid-gap: 25px
+        margin-bottom: 83px
+    &__title
+        margin: 0
+        max-width: 360px
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 44px
+        line-height: 54px
+    &__wrap
+        display: flex
+        flex-wrap: wrap
+        width: 640px
+        position: relative
+        &::before
+            content: ""
+            display: block
+            height: 1px
+            width: 100%
+            position: absolute
+            top: 0
+            left: 0
+            background-color: #fff
+            z-index: 2
+    &__block
+        width: 50%
+        border-left: 1px solid #D9D9D9
+        border-top: 1px solid #D9D9D9
+        padding: 11px 30px
+        min-height: 66px
+        display: flex
+        align-items: center
+        font-size: 14px
+        line-height: 22px
+        position: relative
+        transition: all 0.3s
+        &::before
+            transition: all 0.3s
+            content: ""
+            display: block
+            width: 100%
+            height: 100%
+            background: #CD072D
+            border-radius: 0px 20px 20px 0px
+            position: absolute
+            top: 0
+            left: 0
+            z-index: -1
+            opacity: 0
+        &:nth-child(2n)
+            width: calc(50% - 20px)
+            padding-right: 0
+            &::before
+                width: calc(100% + 20px)
+        &:hover
+            color: #FFFFFF
+            &::before
+                opacity: 1
+    &__imgs
+        position: absolute
+        top: 30px
+        right: 30px
+        width: 760px
+        display: flex
+        align-items: center
+        justify-content: center
+        pointer-events: none
+    &__img
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        opacity: 0
+        transition: all 0.3s
+        &.active
+            opacity: 1
+.mark
+    &__title
+        margin: 0
+        margin-bottom: 45px
+        font-family: 'Montserrat'
+        max-width: 525px
+        font-weight: 600
+        font-size: 24px
+        line-height: 32px
+    &__wrap
+        display: flex
+        justify-content: space-between
+        border: 1px solid #D9D9D9
+    &__block
+        width: 25%
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 150px
+        border-right: 1px solid #D9D9D9
+        img
+            max-width: 90%
+            max-height: 90%
+        &:last-child
+            border-right: 0
+.contacts
+    padding-top: 100px
+    &__title
+        margin: 0
+        margin-bottom: 65px
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 52px
+        line-height: 63px
+    &__map
+        height: 500px
+    &__wrap
+        display: flex
+        justify-content: space-between
+    &__block
+        width: 25%
+        border-right: 1px solid #D9D9D9
+        padding: 0 28px
+        padding-top: 18px
+        padding-bottom: 42px
+        padding-right: 15px
+        &:last-child
+            border-right: 0
+        &:first-child
+            padding-left: 0
+    &__icon
+        width: 50px
+        height: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #CD072D
+        border-radius: 7px
+        margin-bottom: 29px
+    &__name
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        margin-bottom: 22px
+    &__text
+        margin: 0
+        margin-bottom: 22px
+        font-size: 14px
+        line-height: 22px
+        a
+            display: block
+            color: #000
+            text-decoration: none
+            margin-bottom: 14px
+            &:hover
+                color: #CD072D
+        span
+            display: block
+            margin-bottom: 14px
+.serts
+    background: #FAF8F9
+    border-radius: 30px 30px 0px 0px
+    padding-top: 67px
+    padding-bottom: 78px
+    &__title
+        margin-top: 0
+        margin-bottom: 43px
+        font-family: 'Montserrat'
+        font-weight: 600
+        font-size: 44px
+        line-height: 54px
+    &__wrap
+        display: flex
+    &__left
+        width: 50%
+        border-right: 1px solid #D9D9D9
+    &__tabs
+        columns: 2
+        grid-gap: 50px
+        padding-bottom: 30px
+    &__tab
+        overflow: hidden
+        transition: all 0.3s
+        cursor: pointer
+        font-size: 11px
+        line-height: 14px
+        margin-bottom: 14px
+        position: relative
+        padding-right: 25px
+        &::before
+            content: ""
+            width: 3px
+            opacity: 0
+            height: 100%
+            display: block
+            position: absolute
+            transition: all 0.3s
+            top: 0
+            left: 0
+            background: #A2B3D1
+        &.active, &:hover
+            color: #202975
+            padding-left: 25px
+            padding-right: 0
+            &::before
+                opacity: 1
+    &__copy
+        padding-top: 30px
+        border-top: 1px solid #D9D9D9
+        display: flex
+        align-items: center
+        grid-gap: 11px
+    &__cont
+        width: 50%
+        &-block
+            height: 0
+            overflow: hidden
+            &.active
+                height: auto
+    &__main
+        padding-left: 66px
+    &__bot
+        padding-top: 24px
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+    &__arrows
+        display: flex
+        grid-gap: 10px
+    &__down
+        display: flex
+        align-items: center
+        grid-gap: 7px
+        text-decoration: none
+        font-size: 14px
+        line-height: 22px
+        color: #202975
+    .swiper-slide
+        height: 360px
+        img
+            border-radius: 20px
+            width: 230px
+            height: 330px
+            object-fit: cover
+            transition: all 0.3s
+        &.swiper-slide-active
+            img
+                width: 255px
+                height: 360px
+    &__end
+        display: none
+@media(min-width: 768px)
+    .about
+        &__block
+            &:hover
+                .about__drop
+                    opacity: 1
