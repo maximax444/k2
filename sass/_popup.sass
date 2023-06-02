@@ -11,6 +11,15 @@
     align-items: center
     &-active
         display: flex
+    &-thx
+        .popup
+            width: 972px
+            max-width: 95%
+            background: #FFFFFF
+            padding: 77px 100px
+            position: relative
+        .overlay-call__title
+            margin-bottom: 0
     &-call
         .popup
             width: 972px
@@ -101,6 +110,9 @@
                 background: darken(#CD072D, 5)
 @media(max-width: 767px)
     .overlay
+        &-thx
+            .popup
+                padding: 42px 20px
         &-call
             padding: 100px 0
             align-items: flex-start

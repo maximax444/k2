@@ -262,13 +262,19 @@ if (screen.width >= 1200) {
 
 $('.overlay-call__close').on('click', function (e) {
     e.preventDefault();
-    $('.overlay-call').removeClass('overlay-active');
+    $(this).closest('.overlay').removeClass('overlay-active');
     $('body').css('overflow', 'visible');
 });
 $('.overlay-call').on('click', function (e) {
     if (!(($(e.target).parents('.popup').length) || ($(e.target).hasClass('popup')))) {
         $('body').css("overflow", "visible");
         $('.overlay-call').removeClass('overlay-active');
+    }
+});
+$('.overlay-thx').on('click', function (e) {
+    if (!(($(e.target).parents('.popup').length) || ($(e.target).hasClass('popup')))) {
+        $('body').css("overflow", "visible");
+        $('.overlay-thx').removeClass('overlay-active');
     }
 });
 $('.header__btn').on('click', function (e) {
