@@ -23,6 +23,37 @@
         padding-left: 20px
         padding-right: 20px
         margin: auto
+.btn
+    display: inline-block
+    border-radius: 5px
+    background: #CD072D
+    border: 1px solid #CD072D
+    padding: 14px 39px
+    padding-top: 13px
+    color: #FFF
+    font-size: 14px
+    font-weight: 600
+    line-height: normal
+    transition: all 0.3s
+    text-decoration: none
+    &:hover
+        background: transparent
+        color: #000
+.bread
+    display: flex
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+    list-style-type: none
+    margin-bottom: 40px
+    color: #CD072D
+    grid-gap: 4px
+    font-size: 12px
+    a
+        color: #868484
+        text-decoration: none
+        &:hover
+            color: #CD072D
 .prev, .next
     width: 60px
     height: 35px
@@ -41,7 +72,7 @@
         path
             fill: #fff
 .header
-    position: fixed
+    position: static
     top: 0
     left: 0
     width: 100%
@@ -96,141 +127,276 @@
         &:hover
             background: darken(#CD072D, 5)
 .main
-    height: 100vh
-    background: url('../img/main-bg.svg') top left no-repeat
     position: relative
-    &__video
-        width: calc(50% + 2px)
-        height: calc(100% + 2px)
+    padding: 126px 0
+    &>img
         position: absolute
-        bottom: -1px
-        right: -1px
-        display: flex
-        justify-content: center
-        align-items: center
-        video
-            width: 100%
-            height: 100%
-            object-fit: cover
-    &__top
-        background: #A2B3D1
-        border-radius: 0px 14px
-        margin-bottom: 18px
-        padding: 6px 18px
-        font-size: 14px
-        line-height: 19px
-        color: #FFFFFF
-        display: inline-block
-    &__title
-        font-family: 'Montserrat'
-        max-width: 480px
-        font-weight: 600
-        font-size: 52px
-        line-height: 68px
-        margin-top: 0
-    &__main
-        height: 100%
-        display: flex
-        align-items: center
-        padding-bottom: 120px
-        position: relative
-    &-bot
-        width: 50%
-        position: absolute
-        bottom: 0
+        top: 0
         left: 0
-        border-bottom: 10px solid #CD072D
-        background: #202975 url('../img/main-bot-bg.svg')
-        padding-left: calc((100vw - 1280px) / 2)
-        height: 220px
-        border-radius: 0px 20px 0px 0px
-        padding-top: 42px
-        padding-right: 100px
-        &__top
-            display: flex
-            align-items: center
-            grid-gap: 14px
-            margin-bottom: 23px
-        &__icon
-            padding: 6px 9px
-            font-family: 'Montserrat'
-            font-weight: 600
-            font-size: 15px
-            line-height: 14px
-            color: #FFFFFF
-            border: 2px solid #FFFFFF
-            border-radius: 0px 6px
-        &__title
-            font-family: 'Montserrat'
-            font-weight: 600
-            font-size: 16px
-            line-height: 20px
-            color: #FFFFFF
-        &__text
-            margin: 0
-            font-weight: 400
-            font-size: 14px
-            line-height: 22px
-            color: #FFFFFF
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__wrap
+        display: flex
+        flex-direction: column
+        position: relative
+        z-index: 2
+        align-items: center
+    &__title
+        margin: 0
+        margin-bottom: 35px
+        max-width: 340px
+        color: #FFF
+        text-align: center
+        font-family: Montserrat
+        font-size: 36px
+        font-weight: 700
+        line-height: 44px
+    &__descr
+        margin: 0
+        color: #FFF
+        text-align: center
+        font-family: Montserrat
+        font-size: 16px
+        font-weight: 600
+        line-height: 22px
+        text-transform: uppercase
+        max-width: 340px
 .footer
     border-top: 1px solid #D9D9D9
-    padding-top: 47px
+    padding-top: 60px
     &__wrap
-        padding-bottom: 78px
+        padding-bottom: 58px
         display: flex
         justify-content: space-between
         align-items: flex-start
         .end__polit
             display: none
             margin-top: 56px
+    &__logo
+        max-width: 191px
+        display: flex
+        margin-bottom: 43px
+        img
+            max-width: 100%
+    &__phone
+        display: flex
+        align-items: center
+        grid-gap: 17px
+        font-size: 16px
+        font-weight: 600
+        line-height: normal
+        margin-bottom: 24px
+        text-decoration: none
+        color: #000
+        path
+            transition: all 0.3s
+        &:hover
+            color: #CD072D
+            path
+                fill: #CD072D
+    &__call
+        color: #FFF
+        font-size: 14px
+        font-weight: 600
+        line-height: normal
+        padding: 14px 36px
+        border-radius: 5px
+        background: #CD072D
+        text-decoration: none
+        display: inline-block
+        margin-bottom: 24px
+        border: 1px solid #CD072D
+        &:hover
+            color: #000
+            background-color: transparent
+    &__mail
+        display: flex
+        align-items: center
+        grid-gap: 17px
+        font-size: 14px
+        font-weight: 400
+        line-height: normal
+        margin-bottom: 24px
+        text-decoration: none
+        color: #000
+        path
+            transition: all 0.3s
+        &:hover
+            color: #CD072D
+            path
+                fill: #CD072D
+    &__right
+        width: 280px
+    &__search
+        position: relative
+        margin-bottom: 26px
+        input
+            display: block
+            width: 100%
+            padding: 14px 25px
+            font-size: 12px
+            line-height: normal
+            font-weight: 600
+            border-radius: 5px
+            border: 1px solid #D9D9D9
+            &::placeholder
+                color: #868484
+        button
+            position: absolute
+            width: 50px
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            position: absolute
+            top: 0
+            background: transparent
+            border: 0
+            right: 0
+            path
+                transition: all 0.3s
+            &:hover
+                path
+                    fill: #CD072D
+    &__soc
+        margin-bottom: 32px
+        &-name
+            margin-bottom: 17px
+            font-size: 12px
+            font-weight: 400
+            line-height: 14px
+        &-wrap
+            display: flex
+            align-items: center
+            grid-gap: 13px
+            a
+                path
+                    transition: all 0.3s
+                &:hover
+                    path
+                        fill: #CD072D
+    &__sub
+        &-name
+            font-size: 14px
+            margin-bottom: 18px
+            font-weight: 600
+            line-height: normal
+        form
+            position: relative
+            input
+                display: block
+                width: 100%
+                padding: 14px 25px
+                padding-right: 60px
+                font-size: 12px
+                line-height: normal
+                font-weight: 600
+                border-radius: 5px
+                border: 1px solid #D9D9D9
+                &:placeholder
+                    color: #868484
+            button
+                position: absolute
+                width: 50px
+                height: 100%
+                display: flex
+                align-items: center
+                justify-content: center
+                cursor: pointer
+                position: absolute
+                top: 0
+                background: #CD072D
+                border-radius: 0px 5px 5px 0px
+                border: 1px solid #CD072D
+                transition: all 0.3s
+                right: 0
+                path
+                    transition: all 0.3s
+                &:hover
+                    background-color: transparent
+                    path
+                        fill: #CD072D
+        &-thx
+            display: none
+            align-items: center
+            grid-gap: 8px
+            color: #CD072D
+            font-size: 12px
+            font-weight: 400
+            line-height: normal
+            &.active
+                display: flex
     &__menu
+        columns: 3
         margin: 0
         padding: 0
         list-style-type: none
-        display: flex
-        align-items: center
-        padding-top: 13px
-        justify-content: space-between
-        width: 510px
+        width: 670px
+        margin-left: 50px
         a
-            font-size: 14px
-            line-height: 19px
+            color: #000
+            font-size: 12px
+            font-style: normal
+            font-weight: 300
+            line-height: 14px
             text-decoration: none
-            color: #000000
+            display: block
+            padding: 7px 0
             &:hover
                 color: #CD072D
+        &>li
+            overflow: hidden
+            margin-bottom: 20px
+            &>ul
+                margin: 0
+                padding: 0
+                list-style-type: none
+                margin-top: 12px
+            &>a
+                color: #000
+                padding: 0
+                font-size: 14px
+                font-weight: 600
+                line-height: normal
+                span
+                    display: none
 .end
     border-top: 1px solid #D9D9D9
     background: #F2F2F2
-    padding: 14px 0
+    padding: 16px 0
     &__wrap
         display: flex
         align-items: center
         justify-content: space-between
     &__copy
-        font-weight: 400
-        font-size: 14px
-        line-height: 32px
-    &__polit
-        font-size: 12px
-        line-height: 20px
-        text-decoration: none
-        color: #000000
-        border-bottom: 1px solid #000
-        &:hover
-            color: #CD072D
-            border-bottom: 1px solid #CD072D
+        font-weight: 300
+        font-size: 11px
+        line-height: 14px
+        max-width: calc(100% - 250px)
+        width: 900px
+    // &__polit
+    //     font-size: 12px
+    //     line-height: 20px
+    //     text-decoration: none
+    //     color: #000000
+    //     border-bottom: 1px solid #000
+    //     &:hover
+    //         color: #CD072D
+    //         border-bottom: 1px solid #CD072D
     &__right
         display: flex
         align-items: center
         justify-content: space-between
-        width: 510px
+        width: 215px
     &__dev
         display: flex
         align-items: center
         grid-gap: 15px
         font-size: 12px
         line-height: 12px
+        font-weight: 300
         color: #000000
         text-decoration: none
         img
@@ -243,35 +409,21 @@
     .header
         &__right
             grid-gap: 100px
+    .footer
+        &__menu
+            width: 600px
+            margin-left: 0
 @media(max-width: 1199px)
-    .main
-        height: 720px
-        &-bot
-            padding-left: calc((100vw - 940px) / 2)
-        &__title
-            font-size: 48px
     .header
         &__right
             grid-gap: 70px
         &__phone
             display: none
+    .footer
+        &__menu
+            width: 420px
+            columns: 2
 @media(max-width: 991px)
-    .main
-        height: auto
-        padding-bottom: 150px
-        padding-top: 150px
-        &-bot
-            width: 100%
-            padding-left: calc((100vw - 740px) / 2)
-            border-radius: 20px 20px 0px 0px
-            z-index: 2
-        &__video
-            position: static
-            width: 100%
-            height: 720px
-        &__main
-            position: static
-            padding-bottom: 0
     .header
         &__right
             grid-gap: 20px
@@ -280,10 +432,11 @@
             a
                 font-size: 13px
     .footer
-        &__logo
-            max-width: 150px
-            img
-                max-width: 100%
+        &__wrap
+            flex-wrap: wrap
+        &__menu
+            width: 100%
+            margin: 40px 0
 @media(max-width: 767px)
     .header
         padding: 15px 0
@@ -376,59 +529,106 @@
                     &::after
                         top: 0
                         transform: rotate(-45deg)
-    .main
-        &-bot
-            width: 100%
-            padding-left: calc((100vw - 540px) / 2)
     .end
         &__polit
             display: none
         &__right
             width: auto
-    .footer
-        &__wrap
-            flex-wrap: wrap
-            .end__polit
-                display: block
-        &__menu
-            padding-top: 44px
 @media(max-width: 575px)
     .main
-        padding-top: 110px
-        background-size: contain
+        padding: 83px 0
         &__title
-            margin-bottom: 34px
-            font-size: 37px
-            line-height: 48px
-        &__video
-            width: 100vw
-            height: 100vw
-        &-bot
-            padding: 36px 20px
+            margin-bottom: 17px
+            font-size: 32px
+            line-height: 38px
+        &__descr
+            font-size: 14px
+            line-height: 22px
     .end
         padding: 0
         &__wrap
-            flex-direction: column-reverse
-            align-items: flex-start
-        &__right
-            border-bottom: 1px solid #000
-            width: calc(100% + 40px)
-            padding: 20px
-            padding-bottom: 17px
-            margin-left: -20px
-            margin-right: -20px
-        &__copy
-            font-size: 14px
-            line-height: 32px
-            padding: 12px 0
-    .footer
-        padding-top: 52px
-        &__wrap
-            padding-bottom: 25px
-        &__menu
             flex-direction: column
             align-items: flex-start
-            grid-gap: 27px
+        &__copy
+            font-size: 10px
+            line-height: 14px
+            padding: 18px 0
             width: 100%
-        &__logo
             max-width: 100%
+        &__right
+            padding-bottom: 20px
+    .bread
+        margin-bottom: 25px
+    .footer
+        padding-top: 40px
+        overflow: hidden
+        &__wrap
+            padding-bottom: 26px
+        &__left
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            grid-gap: 0 10px
+        &__logo
+            width: 100%
+            margin-bottom: 30px
+        &__mail
+            width: 100%
+            margin-bottom: 0
+        &__phone
+            grid-gap: 11px
+            margin-bottom: 15px
+        &__call
+            padding: 10px 23px
+            font-size: 12px
+            margin-bottom: 15px
+        &__menu
+            margin: 22px 0
+            columns: auto
+            border-bottom: 1px solid #D9D9D9
+            margin-left: -20px
+            margin-right: -20px
+            width: calc(100% + 40px)
+            &>li
+                border-top: 1px solid #D9D9D9
+                margin-bottom: 0
+                padding: 12px 20px
+                overflow: hidden
+                position: relative
+                &>ul
+                    display: none
+                &>a
+                    span
+                        width: 50px
+                        height: 44px
+                        z-index: 2
+                        position: absolute
+                        top: 0
+                        right: 0
+                        cursor: pointer
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        img
+                            transition: all 0.3s
+                        &.single
+                            img
+                                transform: rotate(-90deg)
+                &.active>a>span img
+                    transform: rotate(-180deg)
+        &__right
+            display: flex
+            flex-direction: column
+            width: 100%
+        &__soc
+            display: flex
+            align-items: center
+            grid-gap: 13px
+            margin-bottom: 0px
+            order: 15
+            &-name
+                margin-bottom: 0
+            &-wrap a
+                display: flex
+        &__sub
+            margin-bottom: 20px

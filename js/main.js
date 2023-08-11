@@ -282,3 +282,16 @@ $('.header__btn').on('click', function (e) {
     $('.overlay-call').addClass('overlay-active');
     $('body').css("overflow", "hidden");
 });
+
+
+$('.footer__menu>li>a>span').on('click', function(e){
+    if ($(this).hasClass('single')) {} else {
+        e.preventDefault();
+        $(this).closest('li').toggleClass('active');
+        if($(this).closest('li').hasClass('active')){
+            $(this).closest('li').find('ul').slideDown();
+        } else {
+            $(this).closest('li').find('ul').slideUp();
+        }
+    }
+});

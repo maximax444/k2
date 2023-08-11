@@ -92,6 +92,11 @@
             left: 50%
             margin-left: -600px
     .manuf
+        &-ways
+            &__cont
+                padding: 20px 25px
+            &__img
+                height: 240px
         &__top
             display: block
             margin-bottom: 0
@@ -177,6 +182,13 @@
             border-bottom: 1px solid #D9D9D9
             &:nth-child(2)
                 border-right: 0
+    .manuf
+        &-ways
+            grid-template-columns: repeat(1, 1fr)
+            &__block
+                border-radius: 20px 20px 0 0
+            &__cont
+                border-radius: 0
 @media(max-width: 575px)
     .serts
         padding-top: 55px
@@ -258,22 +270,25 @@
             margin-left: -400px
     .manuf
         padding-top: 44px
+        padding-bottom: 28px
+        &-ways
+            margin-bottom: 34px
         &__title
-            margin-bottom: 23px
-            font-size: 32px
-            line-height: 39px
+            margin-bottom: 26px
+            font-size: 24px
+            line-height: 32px
         &__bold
             font-size: 20px
             line-height: 28px
     .history
-        padding-top: 60px
+        padding-top: 0px
         &__bg
             width: 1200px
             left: 50%
             margin-left: -600px
         &__title
-            font-size: 32px
-            line-height: 39px
+            font-size: 24px
+            line-height: 32px
             margin-bottom: 44px
         &__nav
             width: 90%
@@ -288,7 +303,7 @@
     .clients
         padding-top: 54px
         &__title
-            font-size: 28px
+            font-size: 24px
             line-height: 28px
         &__top
             margin-bottom: 52px
@@ -323,6 +338,7 @@
                 color: #000000
                 background: transparent
     .mark
+        padding-top: 34px
         &__title
             font-size: 20px
             line-height: 28px

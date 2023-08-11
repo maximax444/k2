@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ключевой компонент - Энергия верных
+        решений</title>
+    <link rel="icon" href="/favic.ico" type="image/x-icon">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <style>
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('/fonts/Montserrat-SemiBold.eot');
+            src: url('/fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+                url('/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+                url('/fonts/Montserrat-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            src: url('/fonts/OpenSans-SemiBold.eot');
+            src: url('/fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+                url('/fonts/OpenSans-SemiBold.woff2') format('woff2'),
+                url('/fonts/OpenSans-SemiBold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            src: url('/fonts/OpenSans-Regular.eot');
+            src: url('/fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+                url('/fonts/OpenSans-Regular.woff2') format('woff2'),
+                url('/fonts/OpenSans-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+          font-family: 'Open Sans';
+          src: url('/fonts/OpenSans-Light.eot');
+          src: url('/fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+              url('/fonts/OpenSans-Light.woff2') format('woff2'),
+              url('/fonts/OpenSans-Light.woff') format('woff');
+          font-weight: 300;
+          font-style: normal;
+          font-display: swap;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.css"
+        integrity="sha512-Y1c7KsgMNtf7pIhrj/Ul2LhutImFYr+TsCmjB8mGAk+cgG1Vm8U1g7tvfmRr6yD5nds03Qgc6Mcb86MBKu1Llg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+    <div class="fullpage">
+        <header class="header animate__animated animate__fadeInDown">
+            <div class="container">
+                <div class="header__wrap">
+                    <a href="#main" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="header__right">
+                        <ul class="header__menu">
+                            <li><a href="#about">О компании</a></li>
+                            <li><a href="#manuf">Продукция</a></li>
+                            <li><a href="#history">История</a></li>
+                            <li><a href="#struct">Структура</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                        <div class="header__contacts">
+                            <a href="tel:8 (800) 333-28-29" class="header__phone">8 (800) 333-28-29</a>
+                            <a href="" class="header__btn">Связаться</a>
+                        </div>
+                    </div>
+                    <div class="header__burg">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="contacts-page">
+            <div class="container">
+              <ul class="bread">
+                <li><a href="/">Главная</a></li>
+                <li><span> / Контакты</span></li>
+              </ul>
+                <h2 class="contacts__title contacts-page__title animate__animated animate__fadeInLeft wow">Контакты</h2>
+                <div class="contacts__wrap">
+                    <div class="contacts__block animate__animated animate__fadeInUp wow">
+                        <div class="contacts__icon">
+                            <img src="img/contacts1.svg" alt="">
+                        </div>
+                        <div class="contacts__name">Адрес</div>
+                        <p class="contacts__text">188510, Ленинградская область, Ломоносовский муниципальный район,
+                            Виллозское городское поселение,
+                            <br> тер. Южная часть производственной зоны Горелово, улица Сименса, д. 2/4 пом.314
+                            <br> пом. 302 : коммерческий отдел
+                            <br> пом. 121 : склад
+                        </p>
+                    </div>
+                    <div data-wow-delay="0.3s" class="contacts__block animate__animated animate__fadeInUp wow">
+                        <div class="contacts__icon">
+                            <img src="img/contacts2.svg" alt="">
+                        </div>
+                        <div class="contacts__name">Почтовый адрес</div>
+                        <p class="contacts__text">198515, Санкт-Петербург, а/я 19</p>
+                        <div class="contacts__name">Электронная почта</div>
+                        <p class="contacts__text"><a href="mailto:info@hakel.ru">info@hakel.ru</a></p>
+                    </div>
+                    <div data-wow-delay="0.6s" class="contacts__block animate__animated animate__fadeInUp wow">
+                        <div class="contacts__icon">
+                            <img src="img/contacts3.svg" alt="">
+                        </div>
+                        <div class="contacts__name">Телефон/факс многоканальный</div>
+                        <p class="contacts__text">
+                            <a href="">8 (800) 333-28-29</a>
+                            <a href="">+7 (812) 207-47-05</a>
+                            <a href="">+7 (495) 984-00-66</a>
+                        </p>
+                    </div>
+                    <div data-wow-delay="0.9s" class="contacts__block animate__animated animate__fadeInUp wow">
+                        <div class="contacts__icon">
+                            <img src="img/contacts4.svg" alt="">
+                        </div>
+                        <div class="contacts__name">Время работы</div>
+                        <p class="contacts__text"><span>пн-чт 9.15-18.00, без обеда</span>
+                            <span>пт 9.15-16.45, без обеда</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="map" class="contacts__map animate__animated animate__fadeInUp wow"></div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                  <div class="footer__left">
+                    <a href="/" class="footer__logo">
+                      <img src="img/footer-logo.svg" alt="">
+                    </a>
+                    <a href="" class="footer__phone"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_78_6468)">
+                      <path d="M13.9694 10.8474C13.9298 10.7281 13.6779 10.5524 13.2138 10.3206C13.088 10.2475 12.9089 10.1482 12.6771 10.0222C12.4451 9.89627 12.2345 9.7802 12.0457 9.67412C11.8565 9.56807 11.6793 9.46533 11.5137 9.36605C11.4872 9.34616 11.4044 9.28825 11.2652 9.19192C11.1258 9.09587 11.0083 9.02458 10.912 8.97808C10.816 8.93187 10.7214 8.90861 10.6286 8.90861C10.4961 8.90861 10.3305 9.00312 10.1317 9.19192C9.93294 9.38095 9.7506 9.58629 9.58496 9.80855C9.4193 10.0307 9.2436 10.236 9.05818 10.425C8.87249 10.614 8.71992 10.7084 8.60075 10.7084C8.54091 10.7084 8.46632 10.6917 8.37692 10.6588C8.28755 10.6257 8.21957 10.5973 8.17291 10.5744C8.12666 10.551 8.04729 10.5048 7.93452 10.435C7.82155 10.3653 7.75872 10.3272 7.74549 10.3206C6.8374 9.81666 6.05858 9.23994 5.4089 8.59054C4.75943 7.94076 4.18264 7.16201 3.67888 6.25382C3.67227 6.24055 3.63406 6.17755 3.56452 6.06492C3.49486 5.95219 3.44844 5.87275 3.42525 5.82622C3.40205 5.77987 3.37388 5.71189 3.34079 5.62242C3.30771 5.53295 3.2911 5.45843 3.2911 5.3987C3.2911 5.27945 3.38558 5.12692 3.57451 4.94129C3.76341 4.75577 3.96895 4.58004 4.19093 4.41444C4.41309 4.24885 4.61842 4.0665 4.80739 3.86771C4.99628 3.66882 5.09073 3.50319 5.09073 3.37064C5.09073 3.2779 5.06754 3.18334 5.02118 3.08726C4.9748 2.99097 4.90354 2.87346 4.80739 2.73419C4.7112 2.59499 4.65321 2.51221 4.63329 2.48557C4.53397 2.31997 4.43134 2.14267 4.32515 1.95374C4.21897 1.76484 4.10307 1.55429 3.97706 1.32231C3.85117 1.09044 3.75181 0.911398 3.67881 0.785467C3.44694 0.321549 3.27131 0.0695476 3.15197 0.0299156C3.10554 0.0100299 3.03589 0 2.94318 0C2.76411 0 2.5305 0.0330847 2.24217 0.0994632C1.95374 0.165737 1.72678 0.23525 1.56104 0.30828C1.2296 0.44741 0.878313 0.851741 0.507067 1.52113C0.169011 2.1441 0 2.7607 0 3.37046C0 3.5493 0.0115971 3.72329 0.0347912 3.89247C0.0579854 4.06148 0.0994283 4.25209 0.159155 4.46425C0.218777 4.67634 0.266872 4.83389 0.30323 4.93649C0.339624 5.03915 0.407569 5.22307 0.507032 5.48831C0.606356 5.75347 0.666083 5.9158 0.685969 5.97545C0.917945 6.6251 1.19304 7.20506 1.51117 7.7155C2.03461 8.56393 2.74892 9.44075 3.6537 10.3456C4.55852 11.2504 5.43516 11.9647 6.28366 12.4883C6.79404 12.8064 7.37421 13.0815 8.02375 13.3136C8.08344 13.3334 8.24576 13.393 8.51082 13.4927C8.77599 13.592 8.95997 13.66 9.06264 13.6965C9.16534 13.733 9.32293 13.7811 9.53485 13.8408C9.74722 13.9005 9.93765 13.942 10.1067 13.9653C10.2758 13.9882 10.4498 14 10.6287 14C11.2384 14 11.855 13.8309 12.4781 13.4929C13.1474 13.1218 13.5517 12.7704 13.6908 12.4387C13.7641 12.2732 13.8334 12.0462 13.8997 11.7577C13.9661 11.4694 13.9992 11.2359 13.9992 11.0568C13.9994 10.9637 13.9894 10.8942 13.9694 10.8474Z" fill="#A2B3D1"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_78_6468">
+                      <rect width="14" height="14" fill="white"/>
+                      </clipPath>
+                      </defs>
+                      </svg>
+                       8 (800) 333-28-29</a>
+                    <a href="" class="footer__call">Заказать звонок</a>
+                    <a href="" class="footer__mail"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_78_6435)">
+                      <path d="M13.8768 2.78149L9.63086 7.00006L13.8768 11.2186C13.9535 11.0582 14.0001 10.8808 14.0001 10.6915V3.30865C14.0001 3.11924 13.9535 2.94192 13.8768 2.78149Z" fill="#A2B3D1"/>
+                      <path d="M12.7693 2.07812H1.23029C1.04088 2.07812 0.863551 2.12469 0.703125 2.20145L6.12985 7.60082C6.60968 8.08065 7.38996 8.08065 7.86979 7.60082L13.2965 2.20145C13.1361 2.12469 12.9588 2.07812 12.7693 2.07812Z" fill="#A2B3D1"/>
+                      <path d="M0.12332 2.78149C0.0465664 2.94192 0 3.11924 0 3.30865V10.6915C0 10.8809 0.0465664 11.0582 0.12332 11.2186L4.36923 7.00006L0.12332 2.78149Z" fill="#A2B3D1"/>
+                      <path d="M9.0506 7.58008L8.44977 8.1809C7.65027 8.98041 6.34934 8.98041 5.54983 8.1809L4.94904 7.58008L0.703125 11.7986C0.863551 11.8754 1.04088 11.922 1.23029 11.922H12.7693C12.9588 11.922 13.1361 11.8754 13.2965 11.7986L9.0506 7.58008Z" fill="#A2B3D1"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_78_6435">
+                      <rect width="14" height="14" fill="white"/>
+                      </clipPath>
+                      </defs>
+                      </svg> info@hakel.ru</a>
+                  </div>
+                  <ul class="footer__menu">
+                    <li>
+                      <a href="">Продукция <span><img src="img/footer-menu.svg" alt=""></span></a>
+                      <ul>
+                        <li><a href="">УЗИП</a></li>
+                        <li><a href="">Устройства промышленной
+                          автоматики</a></li>
+                        <li><a href="">Электронные компоненты</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Производство <span><img src="img/footer-menu.svg" alt=""></span></a>
+                      <ul>
+                        <li><a href="">Производство изделий</a></li>
+                        <li><a href="">Производство компонентов</a></li>
+                        <li><a href="">Испытательная лаборатория</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Где купить <span class="single"><img src="img/footer-menu.svg" alt=""></span></a>
+                      <!-- <ul>
+                        <li><a href="">Дистрибьюторы и дилеры</a></li>
+                      </ul> -->
+                    </li>
+                    <li>
+                      <a href="">Контакты <span class="single"><img src="img/footer-menu.svg" alt=""></span></a>
+                    </li>
+                    <li>
+                      <a href="">Поддержка <span><img src="img/footer-menu.svg" alt=""></span></a>
+                      <ul>
+                        <li><a href="">Блог</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <!-- <li><a href="">Конфигуратор</a></li> -->
+                        <li><a href="">Техподдержка</a></li>
+                        <!-- <li><a href="">Учебный центр</a></li>
+                        <li><a href="">База знаний</a></li> -->
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">Информация <span><img src="img/footer-menu.svg" alt=""></span></a>
+                      <ul>
+                        <li><a href="">Сертификаты</a></li>
+                        <li><a href="">Статьи</a></li>
+                        <li><a href="">Технические бюллетени</a></li>
+                        <li><a href="">Релизы о продукции</a></li>
+                        <li><a href="">Опросные листы</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="">О компании <span><img src="img/footer-menu.svg" alt=""></span></a>
+                      <ul>
+                        <li><a href="">Миссия и ценности </a></li>
+                        <li><a href="">Работа в компании</a></li>
+                        <li><a href="">Вакансии</a></li>
+                        <li><a href="">Карьерные истории</a></li>
+                        <li><a href="">Обучение</a></li>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">История компании</a></li>
+                        <li><a href="">Реализованные проекты</a></li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">Пресс-центр</a></li>
+                        <li><a href="">Специальная оценка условий труда</a></li>
+                        <li><a href="">Политика обработки персональных
+                          данных</a></li>
+                        <li><a href="">Банковские реквизиты</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="footer__right">
+                    <form action="" class="footer__search">
+                      <input type="text" placeholder="Поиск по сайту" required>
+                      <button>
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M17.114 16.3951L12.83 11.9395C13.9315 10.6301 14.535 8.98262 14.535 7.26749C14.535 3.26026 11.2747 0 7.26749 0C3.26026 0 0 3.26026 0 7.26749C0 11.2747 3.26026 14.535 7.26749 14.535C8.77186 14.535 10.2055 14.0812 11.4311 13.2199L15.7477 17.7093C15.9281 17.8967 16.1708 18 16.4309 18C16.677 18 16.9105 17.9062 17.0878 17.7355C17.4644 17.3731 17.4764 16.7721 17.114 16.3951ZM7.26749 1.89587C10.2295 1.89587 12.6391 4.30552 12.6391 7.26749C12.6391 10.2295 10.2295 12.6391 7.26749 12.6391C4.30552 12.6391 1.89587 10.2295 1.89587 7.26749C1.89587 4.30552 4.30552 1.89587 7.26749 1.89587Z" fill="#A2B3D1"/>
+                          </svg>
+                      </button>
+                    </form>
+                    <div class="footer__soc">
+                      <div class="footer__soc-name">Мы в соц. сетях</div>
+                      <div class="footer__soc-wrap">
+                        <a href="">
+                          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_6485)">
+                            <circle cx="12.5" cy="12" r="9.5" fill="white"/>
+                            <path d="M11.5 23C17.8528 23 23 17.8528 23 11.5C23 5.14721 17.8528 0 11.5 0C5.14721 0 0 5.14721 0 11.5C0 17.8528 5.14721 23 11.5 23ZM5.26221 11.2508L16.3501 6.97571C16.8647 6.78979 17.3142 7.10125 17.1475 7.87942L17.1484 7.87846L15.2605 16.7728C15.1206 17.4033 14.7459 17.5567 14.2217 17.2596L11.3467 15.1407L9.95996 16.4766C9.80662 16.63 9.67725 16.7593 9.38017 16.7593L9.58429 13.8335L14.9126 9.01983C15.1445 8.81571 14.8609 8.70071 14.5552 8.90388L7.97046 13.0496L5.13188 12.1641C4.51567 11.9686 4.50225 11.5479 5.26221 11.2508Z" fill="#A2B3D1"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_78_6485">
+                            <rect width="23" height="23" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </a>
+                        <a href="">
+                          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_78_6488)">
+                            <circle cx="11.5" cy="11.5" r="9.5" fill="white"/>
+                            <path d="M11.5 0C9.22552 0 7.00211 0.674463 5.11095 1.9381C3.21978 3.20174 1.7458 4.99779 0.875391 7.09914C0.00498281 9.20049 -0.222756 11.5128 0.220974 13.7435C0.664704 15.9743 1.75997 18.0234 3.36828 19.6317C4.97658 21.24 7.02568 22.3353 9.25647 22.779C11.4872 23.2228 13.7995 22.995 15.9009 22.1246C18.0022 21.2542 19.7983 19.7802 21.0619 17.8891C22.3255 15.9979 23 13.7745 23 11.5C23 8.45001 21.7884 5.52494 19.6317 3.36827C17.4751 1.2116 14.55 0 11.5 0ZM18.1282 16.0007C17.7936 16.0477 16.1575 16.0007 16.0726 16.0007C15.6496 16.0062 15.2415 15.8447 14.9369 15.5511C14.5919 15.2179 14.2835 14.852 13.9464 14.5057C13.847 14.3994 13.7391 14.3015 13.6236 14.213C13.3544 14.0065 13.0878 14.0522 12.961 14.3711C12.8621 14.7143 12.793 15.0654 12.7545 15.4205C12.7323 15.7419 12.5285 15.9432 12.1678 15.9654C11.9443 15.9772 11.7209 15.9824 11.5 15.9759C10.695 15.9715 9.90266 15.7757 9.18824 15.4048C8.41502 14.9743 7.74128 14.3857 7.21103 13.6772C6.33938 12.5638 5.64285 11.3406 5.0208 10.0795C4.98813 10.0155 4.3504 8.65898 4.33472 8.59494C4.27722 8.38193 4.33472 8.17676 4.51114 8.10489C4.62353 8.06176 6.72489 8.10489 6.76018 8.10489C6.91651 8.10382 7.06914 8.1525 7.19599 8.24388C7.32284 8.33526 7.41735 8.46461 7.46586 8.61324C7.85465 9.60772 8.38647 10.5402 9.04449 11.3811C9.13667 11.4931 9.2445 11.5912 9.36466 11.6725C9.53586 11.7901 9.6979 11.7496 9.76847 11.551C9.8522 11.2772 9.90137 10.994 9.91483 10.7081C9.9266 10.1409 9.91483 9.76847 9.88347 9.20131C9.86256 8.83801 9.73449 8.52045 9.1987 8.41722C9.03404 8.38716 9.01966 8.25125 9.12552 8.11534C9.34637 7.83437 9.64824 7.78864 9.98671 7.77165C10.4911 7.7429 10.9956 7.7625 11.5 7.77165H11.6098C11.8293 7.77085 12.0483 7.79319 12.2632 7.83829C12.3903 7.86424 12.5056 7.93053 12.5921 8.02731C12.6785 8.12408 12.7313 8.24616 12.7428 8.3754C12.7687 8.51849 12.7797 8.6639 12.7755 8.80926C12.7624 9.42739 12.7323 10.0468 12.7258 10.6649C12.7197 10.9102 12.7421 11.1553 12.7924 11.3955C12.8643 11.7248 13.0904 11.8071 13.3152 11.5693C13.6065 11.2625 13.8734 10.9335 14.1136 10.5852C14.5394 9.95047 14.8902 9.26857 15.1591 8.55312C15.3055 8.18591 15.4205 8.10489 15.8125 8.10489H18.0419C18.1745 8.10256 18.3067 8.12018 18.434 8.15716C18.479 8.169 18.5212 8.19002 18.5577 8.2189C18.5943 8.24778 18.6245 8.2839 18.6465 8.325C18.6684 8.3661 18.6817 8.41129 18.6854 8.45774C18.6891 8.50419 18.6831 8.5509 18.6679 8.59494C18.5581 9.08369 18.2942 9.50057 18.0145 9.90176C17.561 10.5434 17.0827 11.1694 16.6188 11.8032C16.563 11.8851 16.5119 11.9702 16.4659 12.058C16.2908 12.3743 16.3039 12.5507 16.5574 12.812C16.9625 13.2289 17.3951 13.6184 17.7858 14.047C18.0724 14.3589 18.3312 14.6951 18.5594 15.0519C18.8378 15.5015 18.6614 15.9249 18.1282 16.0007Z" fill="#A2B3D1"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_78_6488">
+                            <rect width="23" height="23" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="footer__sub">
+                      <div class="footer__sub-name">Подпишитесь на наши новости</div>
+                      <form action="">
+                        <input type="email" placeholder="E-mail" required>
+                        <button>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.8327 5.41675C15.3327 5.41675 14.9993 5.75008 14.9993 6.25008V9.58342C14.9993 10.0834 14.666 10.4167 14.166 10.4167H6.16602L7.24935 9.33341C7.58268 9.00008 7.58268 8.50008 7.24935 8.16675C6.91602 7.83342 6.41602 7.83342 6.08268 8.16675L3.58268 10.6667C3.49935 10.7501 3.41602 10.8334 3.41602 10.9167C3.33268 11.0834 3.33268 11.3334 3.41602 11.5834C3.41602 11.6667 3.49935 11.7501 3.58268 11.8334L6.08268 14.3334C6.41602 14.6667 6.91602 14.6667 7.24935 14.3334C7.58268 14.0001 7.58268 13.5001 7.24935 13.1667L6.16602 12.0834H14.166C15.5827 12.0834 16.666 11.0001 16.666 9.58342V6.25008C16.666 5.75008 16.2493 5.41675 15.8327 5.41675Z" fill="white"/>
+                            </svg>
+                        </button>
+                      </form>
+                    </div> 
+                    <!-- class "active" to show-->
+                    <div class="footer__sub-thx ">
+                      <img src="img/footer-like.svg" alt="">
+                      Спасибо за подписку!
+                    </div>
+                  </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="end">
+                <div class="container">
+                    <div class="end__wrap">
+                        <div class="end__copy">© 2023 АО «Хакель» Все материалы данного сайта являются объектами авторского права (в том числе дизайн). Запрещается копирование, распространение (в том числе
+                          путем копирования на другие сайты и ресурсы в Интернете) или любое иное использование информации и объектов без предварительного согласия правообладателя.</div>
+                        <div class="end__right">
+                            <a href="https://versality.ru/" target="_blank" class="end__dev">
+                                Разработка сайта
+                                <img src="img/hero-logo.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="overlay overlay-call">
+            <div class="popup">
+                <div class="overlay-call__close">
+                    <img src="img/close.svg" alt="">
+                </div>
+                <div class="overlay-call__title">Заказать звонок</div>
+                <form action="" class="overlay-call__form">
+                    <input type="text" placeholder="Ваше имя*" required>
+                    <input type="tel" placeholder="Телефон*" onkeypress="noWw(event)" required>
+                    <input type="email" placeholder="Е-mail">
+                    <input type="text" placeholder="Удобное время для звонка">
+                    <input type="text" placeholder="Ваш вопрос">
+                    <div class="overlay-call__bot">
+                        <label class="overlay-call__check">
+                            <input type="checkbox" name="" id="" checked required>
+                            <span></span>
+                            <p>Согласен с <a href="">политикой конфиденциальности</a> и <a href="">обработки
+                                    персональных данных</a></p>
+                        </label>
+                        <button class="overlay-call__btn">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="overlay overlay-thx">
+            <div class="popup">
+                <div class="overlay-call__close">
+                    <img src="img/close.svg" alt="">
+                </div>
+                <div class="overlay-call__title">Ваша заявка принята!</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"
+        type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"
+        integrity="sha512-+z66PuMP/eeemN2MgRhPvI3G15FOBbsp5NcCJBojg6dZBEFL0Zoi0PEGkhjubEcQF7N1EpTX15LZvfuw+Ej95Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="
+        https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js
+        "></script>
+    <script>
+        new WOW({
+            mobile: false,
+        }).init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
