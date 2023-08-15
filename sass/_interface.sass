@@ -67,65 +67,322 @@
     path
         transition: all 0.3s
     &:hover
-        background: #202975
-        border: 1px solid #202975
+        background: #CD072D
+        border: 1px solid #CD072D
         path
             fill: #fff
+.page
+    &__wrap
+        display: flex
+        justify-content: space-between
+        padding-bottom: 100px
+    &__aside
+        width: 280px
+        position: relative
+        ul
+            display: block
+            position: sticky
+            margin: 0
+            list-style-type: none
+            padding: 0
+            top: 20px
+            a
+                display: block
+                border-top: 1px solid #D9D9D9
+                padding: 18px 20px 18px 32px
+                text-decoration: none
+                color: #000
+                font-size: 16px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                grid-gap: 5px
+                path
+                    transition: all 0.3s
+                &:hover, &.active
+                    color: #CD072D
+                    path
+                        fill: #CD072D
+    &__content
+        width: calc(100% - 300px)
+.nav
+    background: #FAF8F9
+    position: relative
+    z-index: 3
+    &.active
+        z-index: 6
+    &__wrap
+        position: relative
+        display: flex
+        align-items: center
+    &__menu
+        margin: 0
+        padding: 0
+        list-style-type: none
+        display: flex
+        align-items: center
+        width: calc(100% - 185px)
+        &>li
+            position: relative
+            &>a
+                padding: 13px 45px
+                color: #000
+                font-size: 14px
+                font-weight: 400
+                line-height: normal
+                text-decoration: none
+                display: flex
+                align-items: center
+                grid-gap: 7px
+                svg
+                    margin-top: 1px
+                    transition: all 0.3s
+                path
+                    transition: all 0.3s
+                &:hover
+                    background: #F2EFF1
+                    color: #CD072D
+                    svg
+                        transform: rotate(180deg)
+                    path
+                        fill: #CD072D
+        ul
+            position: absolute
+            width: 250px
+            background-color: #fff
+            margin: 0
+            padding: 0
+            list-style-type: none
+            z-index: 5
+            display: none
+            a
+                padding: 14px 30px
+                color: #000
+                font-size: 14px
+                display: block
+                font-weight: 300
+                line-height: 22px
+                text-decoration: none
+                border-bottom: 1px solid #F2EFF1
+                &:hover
+                    color: #CD072D
+            li
+                &:last-child a
+                    border-bottom: 0
+    &-prod
+        &__name
+            padding: 13px 13px
+            width: 185px
+            background: #CD072D
+            display: flex
+            align-items: center
+            justify-content: center
+            grid-gap: 11px
+            color: #FFF
+            font-size: 14px
+            cursor: pointer
+            transition: all 0.3s
+            path
+                transition: all 0.3s
+            &:hover
+                background: #F2EFF1
+                color: #CD072D
+                path
+                    fill: #CD072D
+        &__drop
+            position: absolute
+            top: 100%
+            left: 0
+            width: 100%
+            background: #fff
+            display: none
+            &>ul
+                margin: 0
+                padding: 46px 43px
+                list-style-type: none
+                display: grid
+                grid-template-columns: repeat(3, 1fr)
+                grid-gap: 35px 50px
+                &>li
+                    &>a
+                        color: #000
+                        font-size: 16px
+                        font-weight: 600
+                        text-decoration: none
+                        &:hover
+                            color: #CD072D
+                    &>ul
+                        padding: 0
+                        margin: 0
+                        list-style-type: none
+                        padding-top: 14px
+                        a
+                            padding: 7px 0
+                            display: block
+                            color: #000
+                            font-size: 14px
+                            font-weight: 400
+                            text-decoration: none
+                            &:hover
+                                color: #CD072D
+    &__shadow
+        display: block
+        width: 100vw
+        height: 100vh
+        position: fixed
+        top: 0
+        left: 0
+        background: rgba(28, 37, 65, 0.70)
+        z-index: 5
+        opacity: 0
+        pointer-events: none
+        transition: all 0.6s
+        &.active
+            display: block
+            opacity: 1
 .header
-    position: static
-    top: 0
-    left: 0
-    width: 100%
-    background: #FFFFFF
     padding: 17px 0
-    z-index: 5
-    border-bottom: 1px solid #D9D9D9
-    &__burg
-        display: none
+    position: relative
+    z-index: 4
     &__wrap
         display: flex
         align-items: center
         justify-content: space-between
+    &__logo
+        display: flex
+        align-items: center
+        text-decoration: none
+        span
+            border-left: 1px solid #D9D9D9
+            color: #000
+            height: 52px
+            display: flex
+            align-items: center
+            margin-left: 12px
+            padding-left: 12px
+            font-size: 12px
+            font-weight: 400
+            line-height: normal
     &__right
         display: flex
         align-items: center
-        justify-content: space-between
-        grid-gap: 200px
-    &__menu
+        grid-gap: 31px
+    &__cart
         display: flex
-        align-items: center
-        margin: 0
-        padding: 0
-        list-style-type: none
-        grid-gap: 39px
-        a
-            font-size: 14px
-            line-height: 19px
-            text-decoration: none
-            color: #000000
-            &:hover
-                color: #CD072D
-    &__contacts
-        display: flex
-        align-items: center
-        grid-gap: 42px
-    &__phone
-        font-weight: 600
-        font-size: 16px
-        line-height: 22px
-        color: #000000
-        text-decoration: none
-    &__btn
-        background: #CD072D
-        border-radius: 5px
-        padding: 11px 42px
-        font-weight: 400
-        font-size: 14px
-        line-height: 18px
-        color: #FFFFFF
-        text-decoration: none
+        margin-left: 8px
+        path
+            transition: all 0.3s
         &:hover
-            background: darken(#CD072D, 5)
+            path
+                fill: #CD072D
+    &__lk
+        display: flex
+        align-items: center
+        grid-gap: 11px
+        text-decoration: none
+        color: #CD072D
+        font-size: 12px
+        font-weight: 600
+        line-height: normal
+        img
+            transition: all 0.3s
+        &:hover
+            img
+                transform: translateX(3px)
+    &__call
+        color: #cd072d
+        text-decoration: none
+        font-size: 12px
+    &__search
+        position: relative
+        input
+            display: block
+            width: 422px
+            padding: 13px 17px
+            font-size: 12px
+            line-height: normal
+            font-weight: 400
+            border-radius: 5px
+            border: 1px solid #D9D9D9
+            padding-right: 60px
+            &::placeholder
+                color: #868484
+        button
+            position: absolute
+            width: 50px
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            position: absolute
+            top: 0
+            background: transparent
+            border: 0
+            right: 0
+            path
+                transition: all 0.3s
+            &:hover
+                path
+                    fill: #CD072D
+    &-phone
+        position: relative
+        &__name
+            display: flex
+            align-items: center
+            grid-gap: 7px
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            color: #000
+            text-decoration: none
+            padding: 11px 0
+            path
+                transition: all 0.3s
+            &:hover
+                color: #868484
+                path
+                    fill: #CD072D
+        &__drop
+            position: absolute
+            top: 100%
+            right: 0
+            width: 230px
+            padding: 23px 18px
+            background: #FAF8F9
+            display: none
+            &-phone
+                display: block
+                text-decoration: none
+                margin-bottom: 11px
+                color: #000
+                font-size: 12px
+                font-weight: 600
+                &:hover
+                    color: #CD072D
+            &-text
+                margin: 0
+                display: block
+                margin-bottom: 11px
+                font-size: 10px
+                font-weight: 300
+            &-time
+                color: #868484
+                margin-bottom: 11px
+                font-size: 10px
+            &-mail
+                display: flex
+                align-items: center
+                grid-gap: 8px
+                text-decoration: none
+                color: #000
+                font-size: 12px
+                path
+                    transition: all 0.3s
+                &:hover
+                    color: #CD072D
+                    path
+                        fill: #CD072D
 .main
     position: relative
     padding: 126px 0
@@ -362,6 +619,8 @@
                 line-height: normal
                 span
                     display: none
+.menu
+    display: none
 .end
     border-top: 1px solid #D9D9D9
     background: #F2F2F2
@@ -402,93 +661,228 @@
         img
             width: 100px
             margin-top: -8px
+@media(min-width: 768px)
+    .header-phone:hover .header-phone__drop
+        display: block
+    .header__burg
+        display: none
 @media(max-width: 1299px)
     .main
         &-bot
             padding-left: calc((100vw - 1140px) / 2)
     .header
-        &__right
-            grid-gap: 100px
+        &__search input
+            width: 400px
+    .nav
+        &__menu
+            &>li>a
+                padding: 13px 30px
     .footer
         &__menu
             width: 600px
             margin-left: 0
 @media(max-width: 1199px)
-    .header
-        &__right
-            grid-gap: 70px
-        &__phone
-            display: none
     .footer
         &__menu
             width: 420px
             columns: 2
-@media(max-width: 991px)
     .header
-        &__right
-            grid-gap: 20px
+        &__search input
+            width: 200px
+    .nav
         &__menu
-            grid-gap: 15px
-            a
-                font-size: 13px
+            &>li>a
+                padding: 13px 15px
+@media(max-width: 991px)
+    .page
+        &__aside
+            display: none
+        &__content
+            width: 100%
     .footer
         &__wrap
             flex-wrap: wrap
         &__menu
             width: 100%
             margin: 40px 0
-@media(max-width: 767px)
     .header
-        padding: 15px 0
-        height: 72px
-        &__logo
-            max-width: 139px
-            display: flex
-            img
-                max-width: 100%
-        &__right
-            position: fixed
-            top: 0
-            right: -100vw
-            width: 100vw
-            height: 110vh
-            flex-direction: column
-            align-items: flex-end
-            z-index: 5
-            transition: all 0.3s
-            grid-gap: 0
-            &.active
-                right: 0
-        &__contacts
-            background: #13367C
-            width: 190px
-            height: calc(270px + 10vh)
-            flex-direction: column
-            align-items: flex-start
-            padding: 52px 20px
+        &__search
+            display: none
+    .nav
         &__menu
-            width: 190px
-            background-color: #fff
-            height: calc(100% - 270px)
-            flex-direction: column
-            align-items: flex-start
-            justify-content: center
-            padding: 0 24px
-            padding-bottom: 38px
-            grid-gap: 32px
-            border-left: 1px solid #D7D7D7
-            a
-                font-size: 16px
-                line-height: 22px
-        &__phone
+            width: calc(100% - 140px)
+            &>li>a
+                padding: 13px 10px
+                font-size: 12px
+        &-prod
+            &__name
+                padding: 13px 10px
+                width: 140px
+                font-size: 12px
+@media(max-width: 767px)
+    .nav
+        display: none
+    .menu
+        position: fixed
+        width: 100vw
+        height: calc(100vh - calc(100vh - 100%) - 65px)
+        background-color: #fff
+        overflow-y: scroll
+        z-index: 10
+        padding-top: 8px
+        padding-bottom: 35px
+        top: 65px
+        left: 0
+        display: none
+        .header__search
             display: block
-            font-size: 16px
-            line-height: 22px
-            color: #FFFFFF
+            margin-bottom: 20px
+            padding: 0 20px
+            width: 100%
+            input
+                width: 100%
+            button
+                right: 20px
+        &__menu
+            list-style-type: none
+            padding: 0
+            margin: 0
+            border-top: 1px solid #F2EFF1
+            a
+                position: relative
+                span
+                    position: absolute
+                    top: 0
+                    right: 0
+                    width: 50px
+                    height: 100%
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                &.active
+                    span
+                        transform: rotate(180deg)
+            &>li
+                border-bottom: 1px solid #F2EFF1
+                &>a
+                    padding: 12px 20px
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    color: #000
+                    text-decoration: none
+                    font-size: 16px
+                    path
+                        fill: #A2B3D1
+                    &.active
+                        background: #F2EFF1
+                &>ul
+                    margin: 0
+                    padding: 0
+                    list-style-type: none
+                    display: none
+                    &>li>a
+                        color: #000
+                        font-size: 14px
+                        font-weight: 300
+                        padding: 12px 20px
+                        padding-left: 32px
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        text-decoration: none
+                        border-top: 1px solid #F2EFF1
+                        path
+                            fill: #A2B3D1
+                        &.active
+                            color: #CD072D
+                    ul
+                        margin: 0
+                        padding: 0
+                        list-style-type: none
+                        display: none
+                        a
+                            color: #000
+                            font-size: 14px
+                            font-weight: 300
+                            padding: 12px 20px
+                            padding-left: 54px
+                            display: block
+                            text-decoration: none
+                            border-top: 1px solid #F2EFF1
+                            background: #FAF8F9
+        &__phone
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 7px
+            grid-gap: 13px
+            color: #000
+            font-size: 20px
+            text-decoration: none
+            font-weight: 600
+            margin-top: 65px
+        .modal--call
+            text-align: center
+            font-size: 14px
+            display: block
+            margin-bottom: 21px
+        .footer__mail
+            justify-content: center
+            margin-bottom: 24px
+        &__lk
+            border-radius: 4.474px
+            background: #CD072D
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 9px 20px
+            width: calc(100% - 40px)
+            margin: 0 auto
+            margin-bottom: 11px
+            grid-gap: 11px
+            color: #fff
+            text-decoration: none
+            font-size: 12px
+            font-weight: 600
+        &__cart
+            padding: 5px
+            border-radius: 4.474px
+            border: 1px solid #D9D9D9
+            background: #FFF
+            display: flex
+            align-items: center
+            justify-content: center
+            width: calc(100% - 40px)
+            margin: 0 auto
+            margin-bottom: 11px
+    .header
+        padding-bottom: 58px
+        padding-top: 13px
+        &__logo
+            img
+                width: 134px
+            span
+                height: 38px
+                margin-left: 9px
+                padding-left: 9px
+                font-size: 10px
+        &__right
+            width: 100%
+            position: absolute
+            bottom: 0
+            left: 0
+            justify-content: space-between
+            padding: 0 20px
+            height: 45px
+            background: #FAF8F9
+        &-phone
+            &__name svg, &__drop
+                display: none
         &__burg
             display: block
-            width: 32px
-            height: 32px
+            width: 22px
+            height: 22px
             position: relative
             transition: all 0.3s
             cursor: pointer
@@ -496,10 +890,11 @@
             span
                 position: absolute
                 left: 0
-                top: 15px
+                top: 10px
                 background: #13367C
                 height: 2px
-                width: 32px
+                width: 22px
+                border-radius: 0px
                 &::before
                     content: ""
                     display: block
@@ -508,7 +903,8 @@
                     position: absolute
                     background: #13367C
                     height: 2px
-                    width: 32px
+                    width: 22px
+                    border-radius: 0px
                     transition: all 0.3s
                 &::after
                     content: ""
@@ -518,7 +914,8 @@
                     position: absolute
                     background: #13367C
                     height: 2px
-                    width: 32px
+                    width: 22px
+                    border-radius: 0px
                     transition: all 0.3s
             &.active
                 span
@@ -529,12 +926,120 @@
                     &::after
                         top: 0
                         transform: rotate(-45deg)
+
+    // .header
+    //     padding: 15px 0
+    //     height: 72px
+    //     &__logo
+    //         max-width: 139px
+    //         display: flex
+    //         img
+    //             max-width: 100%
+    //     &__right
+    //         position: fixed
+    //         top: 0
+    //         right: -100vw
+    //         width: 100vw
+    //         height: 110vh
+    //         flex-direction: column
+    //         align-items: flex-end
+    //         z-index: 5
+    //         transition: all 0.3s
+    //         grid-gap: 0
+    //         &.active
+    //             right: 0
+    //     &__contacts
+    //         background: #13367C
+    //         width: 190px
+    //         height: calc(270px + 10vh)
+    //         flex-direction: column
+    //         align-items: flex-start
+    //         padding: 52px 20px
+    //     &__menu
+    //         width: 190px
+    //         background-color: #fff
+    //         height: calc(100% - 270px)
+    //         flex-direction: column
+    //         align-items: flex-start
+    //         justify-content: center
+    //         padding: 0 24px
+    //         padding-bottom: 38px
+    //         grid-gap: 32px
+    //         border-left: 1px solid #D7D7D7
+    //         a
+    //             font-size: 16px
+    //             line-height: 22px
+    //     &__phone
+    //         display: block
+    //         font-size: 16px
+    //         line-height: 22px
+    //         color: #FFFFFF
+    //     &__burg
+    //         display: block
+    //         width: 32px
+    //         height: 32px
+    //         position: relative
+    //         transition: all 0.3s
+    //         cursor: pointer
+    //         z-index: 6
+    //         span
+    //             position: absolute
+    //             left: 0
+    //             top: 15px
+    //             background: #13367C
+    //             height: 2px
+    //             width: 32px
+    //             &::before
+    //                 content: ""
+    //                 display: block
+    //                 left: 0
+    //                 top: -8px
+    //                 position: absolute
+    //                 background: #13367C
+    //                 height: 2px
+    //                 width: 32px
+    //                 transition: all 0.3s
+    //             &::after
+    //                 content: ""
+    //                 display: block
+    //                 left: 0
+    //                 top: 8px
+    //                 position: absolute
+    //                 background: #13367C
+    //                 height: 2px
+    //                 width: 32px
+    //                 transition: all 0.3s
+    //         &.active
+    //             span
+    //                 width: 0
+    //                 &::before
+    //                     top: 0
+    //                     transform: rotate(45deg)
+    //                 &::after
+    //                     top: 0
+    //                     transform: rotate(-45deg)
     .end
         &__polit
             display: none
         &__right
             width: auto
 @media(max-width: 575px)
+    .page
+        &__wrap
+            padding-bottom: 70px
+            padding-top: 38px
+    .header
+        &-phone
+            &__name
+                font-size: 12px
+        &__call
+            font-size: 10px
+        &__right
+            grid-gap: 0px
+        &__cart
+            margin-left: 0
+        &__lk
+            margin-left: 30px
     .main
         padding: 83px 0
         &__title
@@ -575,6 +1080,7 @@
         &__mail
             width: 100%
             margin-bottom: 0
+            grid-gap: 11px
         &__phone
             grid-gap: 11px
             margin-bottom: 15px
@@ -611,9 +1117,7 @@
                         justify-content: center
                         img
                             transition: all 0.3s
-                        &.single
-                            img
-                                transform: rotate(-90deg)
+                            transform: rotate(-90deg)
                 &.active>a>span img
                     transform: rotate(-180deg)
         &__right
@@ -632,3 +1136,7 @@
                 display: flex
         &__sub
             margin-bottom: 20px
+@media(max-width: 340px)
+    .header
+        &__lk
+            margin-left: 0px

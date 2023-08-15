@@ -214,24 +214,25 @@ $('.about__block').on('click', function () {
 $('.header__burg').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('active');
-    $('.header__right').toggleClass('active');
-});
-$('.header__menu a').on('click', function () {
-    $('.header__burg').removeClass('active');
-    $('.header__right').removeClass('active');
-});
-$(document).mouseup(function (e) { // событие клика по веб-документу
-    var div = $(".header__menu"); // тут указываем ID элемента
-    var div2 = $(".header__contacts");
-    var div3 = $(".header__burg");
-    if (!div.is(e.target) // если клик был не по нашему блоку
-        && div.has(e.target).length === 0 && !div2.is(e.target) // если клик был не по нашему блоку
-        && div2.has(e.target).length === 0 && !div3.is(e.target) // если клик был не по нашему блоку
-        && div3.has(e.target).length === 0) { // и не по его дочерним элементам
-        $('.header__burg').removeClass('active');
-        $('.header__right').removeClass('active');
+    if ($(this).hasClass('active')) {
+        $('.menu').stop().slideDown();
+    } else {
+        $('.menu').stop().slideUp();
     }
 });
+
+// $(document).mouseup(function (e) { // событие клика по веб-документу
+//     var div = $(".header__menu"); // тут указываем ID элемента
+//     var div2 = $(".header__contacts");
+//     var div3 = $(".header__burg");
+//     if (!div.is(e.target) // если клик был не по нашему блоку
+//         && div.has(e.target).length === 0 && !div2.is(e.target) // если клик был не по нашему блоку
+//         && div2.has(e.target).length === 0 && !div3.is(e.target) // если клик был не по нашему блоку
+//         && div3.has(e.target).length === 0) { // и не по его дочерним элементам
+//         $('.header__burg').removeClass('active');
+//         $('.header__right').removeClass('active');
+//     }
+// });
 $("body").on('click', '[href*="#"]', function (e) {
     var fixed_offset = 70;
     if (screen.width >= 768) {
@@ -262,36 +263,182 @@ if (screen.width >= 1200) {
 
 $('.overlay-call__close').on('click', function (e) {
     e.preventDefault();
-    $(this).closest('.overlay').removeClass('overlay-active');
-    $('body').css('overflow', 'visible');
+    $(this).closest('.popup').removeClass('active');
+    let mo = $(this).closest('.overlay');
+    setTimeout(function () {
+        mo.removeClass('overlay-start');
+    }, 500);
+    setTimeout(function () {
+        mo.removeClass('overlay-active');
+    }, 800);
 });
 $('.overlay-call').on('click', function (e) {
     if (!(($(e.target).parents('.popup').length) || ($(e.target).hasClass('popup')))) {
         $('body').css("overflow", "visible");
-        $('.overlay-call').removeClass('overlay-active');
+        $('.overlay-call .popup').removeClass('active');
+        setTimeout(function () {
+            $('.overlay-call').removeClass('overlay-start');
+        }, 500);
+        setTimeout(function () {
+            $('.overlay-call').removeClass('overlay-active');
+        }, 800);
     }
 });
 $('.overlay-thx').on('click', function (e) {
     if (!(($(e.target).parents('.popup').length) || ($(e.target).hasClass('popup')))) {
         $('body').css("overflow", "visible");
-        $('.overlay-thx').removeClass('overlay-active');
+        $('.overlay-thx .popup').removeClass('active');
+        setTimeout(function () {
+            $('.overlay-thx').removeClass('overlay-start');
+        }, 500);
+        setTimeout(function () {
+            $('.overlay-thx').removeClass('overlay-active');
+        }, 800);
     }
 });
-$('.header__btn').on('click', function (e) {
+$('.modal--call').on('click', function (e) {
     e.preventDefault();
     $('.overlay-call').addClass('overlay-active');
-    $('body').css("overflow", "hidden");
+    $('.overlay-call').addClass('overlay-start');
+    setTimeout(function () {
+        $('.overlay-call .popup').addClass('active');
+    }, 300);
 });
 
 
-$('.footer__menu>li>a>span').on('click', function(e){
-    if ($(this).hasClass('single')) {} else {
-        e.preventDefault();
-        $(this).closest('li').toggleClass('active');
-        if($(this).closest('li').hasClass('active')){
-            $(this).closest('li').find('ul').slideDown();
-        } else {
-            $(this).closest('li').find('ul').slideUp();
+// $('.footer__menu>li>a>span').on('click', function (e) {
+//     if ($(this).hasClass('single')) { } else {
+//         e.preventDefault();
+//         $(this).closest('li').toggleClass('active');
+//         if ($(this).closest('li').hasClass('active')) {
+//             $(this).closest('li').find('ul').slideDown();
+//         } else {
+//             $(this).closest('li').find('ul').slideUp();
+//         }
+//     }
+// });
+
+let btnCat = document.querySelector('.nav-prod');
+
+btnCat.addEventListener('mouseenter', function (e) {
+    $('.nav .nav-prod__drop').css('height', 'auto');
+    $('.nav .nav-prod__drop').stop().slideDown();
+    $('.nav').addClass('active');
+    $('.nav__shadow').addClass('active');
+});
+
+btnCat.addEventListener('mouseleave', function (e) {
+    $('.nav .nav-prod__drop').stop().slideUp();
+    $('.nav').removeClass('active');
+    $('.nav__shadow').removeClass('active');
+});
+
+$('.nav__menu>li').on('mouseenter', function () {
+    $(this).find('ul').stop().slideDown();
+    $('.nav').addClass('active');
+    $('.nav__shadow').addClass('active');
+});
+$('.nav__menu>li').on('mouseleave', function () {
+    $(this).find('ul').stop().slideUp();
+    $('.nav').removeClass('active');
+    $('.nav__shadow').removeClass('active');
+});
+
+$('.menu__menu a>span').on('click', function (e) {
+    e.preventDefault();
+    $(this).closest('a').toggleClass('active');
+    if ($(this).closest('a').hasClass('active')) {
+
+        $(this).closest('li').children('ul').stop().slideDown();
+    } else {
+        $(this).closest('li').children('ul').stop().slideUp();
+    }
+});
+
+$('.home-catalog__minus').click(function () {
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+});
+
+$('.home-catalog__plus').click(function () {
+    let $input = $(this).parent().find('input');
+    let count = parseInt($input.val()) + 1;
+    count = count > parseInt($input.data('max-count')) ? parseInt($input.data('max-count')) : count;
+    $input.val(parseInt(count));
+});
+
+$('.home-catalog__count input').bind("change keyup input click", function () {
+    if (this.value.match(/[^0-9]/g)) {
+        this.value = this.value.replace(/[^0-9]/g, '');
+    }
+    if (this.value == "") {
+        this.value = 1;
+    }
+    if (this.value > parseInt($(this).data('max-count'))) {
+        this.value = parseInt($(this).data('max-count'));
+    }
+});
+
+
+const swiper32 = new Swiper('.home-catalog__slider', {
+
+    slidesPerView: 2,
+    spaceBetween: 16,
+    loop: true,
+    navigation: {
+        nextEl: '.home-catalog__next',
+        prevEl: '.home-catalog__prev',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1
+        },
+        // when window width is >= 480px
+        576: {
+            slidesPerView: 1
+        },
+        // when window width is >= 480px
+        768: {
+            slidesPerView: 1
+        },
+        // when window width is >= 640px
+        992: {
+            slidesPerView: 2
+        },
+        // when window width is >= 640px
+        1200: {
+            slidesPerView: 2
+        }
+    }
+});
+const swiper33 = new Swiper('.about-clients__slider', {
+
+    slidesPerView: 5,
+    spaceBetween: 19,
+    loop: true,
+    // Navigation arrows
+    navigation: {
+        nextEl: '.about-clients__next',
+        prevEl: '.about-clients__prev',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 24
+        },
+        // when window width is >= 480px
+        576: {
+            slidesPerView: 3,
+            spaceBetween: 19
+        },
+        // when window width is >= 640px
+        992: {
+            slidesPerView: 4,
+            spaceBetween: 19
         }
     }
 });
