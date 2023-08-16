@@ -442,3 +442,41 @@ const swiper33 = new Swiper('.about-clients__slider', {
         }
     }
 });
+const swiper34 = new Swiper('.phistory__wrap', {
+
+    slidesPerView: 0,
+    spaceBetween: 8,
+    loop: false,
+    autoHeight: true,
+    scrollbar: {
+        el: '.history__nav',
+        draggable: true,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            autoHeight: true,
+            slidesPerView: 1
+        },
+        // when window width is >= 480px
+        576: {
+            autoHeight: false,
+            slidesPerView: 1
+        },
+        // when window width is >= 480px
+        768: {
+            autoHeight: false,
+            slidesPerView: 2
+        },
+        // when window width is >= 640px
+        992: {
+            autoHeight: false,
+            slidesPerView: 2
+        },
+        // when window width is >= 640px
+        1200: {
+            autoHeight: false,
+            slidesPerView: 3
+        }
+    }
+});
