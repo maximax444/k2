@@ -224,10 +224,17 @@
         grid-template-columns: repeat(3, 1fr)
         grid-gap: 16px
         &__block
-            border-radius: 20px 0px 0px 20px
             overflow: hidden
             color: #000
             text-decoration: none
+            &:nth-child(1)
+                border-radius: 20px 0px 0px 20px
+                .manuf-ways__cont
+                    border-radius: 0px 0px 0px 20px
+            &:nth-child(3)
+                border-radius: 0 20px 20px 0
+                .manuf-ways__cont
+                    border-radius: 0px 0px 20px 0
         &__img
             display: flex
             height: 260px
@@ -242,7 +249,6 @@
             padding: 20px 40px
             justify-content: space-between
             align-items: center
-            border-radius: 0px 0px 0px 20px
             transition: all 0.3s
             border: 1px solid #D9D9D9
         &__name
