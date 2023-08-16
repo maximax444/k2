@@ -661,6 +661,61 @@
         img
             width: 100px
             margin-top: -8px
+.pag
+    padding-top: 33px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    grid-gap: 2px
+    font-size: 12px
+    font-weight: 600
+    line-height: 14px
+    &__link
+        width: 23px
+        height: 23px
+        text-align: center
+        line-height: 23px
+        color: #000
+        text-decoration: none
+        font-size: 12px
+        font-weight: 600
+        border-radius: 5px
+        &:hover
+            background: #CD072D
+            color: #FFF
+    span
+        border-radius: 5px
+        background: #CD072D
+        width: 23px
+        height: 23px
+        text-align: center
+        line-height: 23px
+        color: #FFF
+        font-size: 12px
+        font-weight: 600
+    &__left
+        transform: rotate(180deg)
+        display: flex
+        align-items: center
+        padding: 0 12px
+        width: auto
+        height: 23px
+        path
+            transition: all 0.3s
+        &:hover
+            path
+                fill: #CD072D
+    &__right
+        display: flex
+        align-items: center
+        padding: 0 12px
+        width: auto
+        height: 23px
+        path
+            transition: all 0.3s
+        &:hover
+            path
+                fill: #CD072D
 @media(min-width: 768px)
     .header-phone:hover .header-phone__drop
         display: block
@@ -1024,6 +1079,8 @@
         &__right
             width: auto
 @media(max-width: 575px)
+    .pag
+        padding-top: 15px
     .page
         &__wrap
             padding-bottom: 70px

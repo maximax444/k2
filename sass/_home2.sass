@@ -164,10 +164,17 @@
       font-weight: 600
       line-height: 32px
     &__block
-      border-radius: 20px 0px 0px 20px
       overflow: hidden
       color: #000
       text-decoration: none
+      &:nth-child(1)
+        border-radius: 20px 0px 0px 20px
+        .home-news__cont
+          border-radius: 0px 0px 0px 20px
+      &:nth-child(3)
+        border-radius: 0 20px 20px 0
+        .home-news__cont
+          border-radius: 0px 0px 20px 0
     &__img
       display: flex
       width: 100%
@@ -180,7 +187,6 @@
         object-fit: cover
     &__cont
       display: block
-      border-radius: 0px 0px 0px 20px
       height: calc(100% - 270px)
       border: 1px solid #D9D9D9
       padding: 22px 30px
@@ -247,7 +253,7 @@
       &__wrap
         grid-template-columns: repeat(2, 1fr)
       &__block
-        &:nth-child(3)
+        &:nth-child(2)
           display: none
     &-catalog
       &__cont
@@ -277,10 +283,16 @@
       &__wrap
         grid-template-columns: repeat(1, 1fr)
       &__block
-        &:nth-child(3)
+        &:nth-child(2)
           display: block
-      &__block
-        border-radius: 20px 20px 0 0
+        &:nth-child(1)
+          border-radius: 20px 20px 0 0
+          .home-news__cont
+            border-radius: 0px
+        &:nth-child(3)
+          border-radius: 0 0 20px 20px
+          .home-news__cont
+            border-radius: 0px 0px 20px 20px
       &__cont
         border-radius: 0
     &-last
