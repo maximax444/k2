@@ -245,6 +245,7 @@ if (screen.width >= 1200) {
     let bg = $('.struct__imgs');
     let bg2 = $('.trans__bg');
     let bg3 = $('.history__bg');
+    let bg4 = $('.error-bg');
     // let bg3 = $('.programm-top__img img');
     // let bg4 = $('.main__img img');
     // let map = $('.home-map__map');
@@ -255,6 +256,8 @@ if (screen.width >= 1200) {
         bg.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)');
         bg2.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 0 + 'px)');
         bg3.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 0 + 'px)');
+
+        bg4.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 0 + 'px)');
         // bg4.css('transform', 'translate(-' + x * 30 + 'px, -' + y * 30 + 'px)');
         // zekk.css('transform', 'translateX(-' + x * 30 + 'px)');
         // map.css('transform', 'translate(-' + x * 20 + 'px, -' + y * 20 + 'px)');
@@ -478,5 +481,21 @@ const swiper34 = new Swiper('.phistory__wrap', {
             autoHeight: false,
             slidesPerView: 3
         }
+    }
+});
+
+
+$('.news__sort-top').on('click', function () {
+    $(this).next('.news__sort-drop').toggleClass('active');
+    if ($(this).next('.news__sort-drop').hasClass('active')) {
+        $(this).next('.news__sort-drop').stop().slideDown();
+    } else {
+        $(this).next('.news__sort-drop').stop().slideUp();
+    }
+});
+$(document).click(function (e) {
+    if (!$(e.target).closest(".news__sort").length) {
+        $('.news__sort-drop').removeClass('active');
+        $('.news__sort-drop').stop().slideUp();
     }
 });
