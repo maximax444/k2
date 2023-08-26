@@ -499,3 +499,11 @@ $(document).click(function (e) {
         $('.news__sort-drop').stop().slideUp();
     }
 });
+$('.vac__top').on('click', function () {
+    $(this).closest('.vac__block').toggleClass('active');
+    if ($(this).closest('.vac__block').hasClass('active')) {
+        $(this).next('.vac__drop').stop().slideDown();
+    } else {
+        $(this).next('.vac__drop').stop().slideUp();
+    }
+});

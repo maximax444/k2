@@ -205,6 +205,132 @@
             display: grid
             grid-template-columns: repeat(3, 1fr)
             grid-gap: 16px
+.vac
+    &__title
+        margin-top: 0
+        margin-bottom: 32px
+        font-family: 'Montserrat'
+        font-size: 24px
+        font-weight: 600
+    &__block
+        border-radius: 20px
+        border: 1px solid #D9D9D9
+        background: #FAF8F9
+        margin-bottom: 16px
+        &.active
+            background: transparent
+            .vac
+                &__main span
+                    color: #CD072D
+                &__arrow
+                    transform: rotate(180deg)
+    &__top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 26px 44px
+        cursor: pointer
+        user-select: none
+        &:hover
+            .vac__main span
+                color: #CD072D
+    &__main
+        font-size: 14px
+        line-height: 22px
+        max-width: calc(100% - 220px)
+        span
+            display: block
+            margin-bottom: 15px
+            font-size: 16px
+            transition: all 0.3s
+            font-weight: 600
+    &__right
+        display: flex
+        align-items: center
+        span
+            font-size: 14px
+            padding-left: 13px
+            padding-right: 10px
+            font-weight: 600
+    &__arrow
+        display: flex
+        padding-top: 1px
+        transition: all 0.3s
+        svg
+            transition: all 0.3s
+    &__drop
+        border-top: 1px solid #D9D9D9
+        display: none
+    &__cont
+        padding: 25px 44px
+        padding-bottom: 1px
+    &__line
+        display: flex
+        align-items: flex-start
+        margin-bottom: 26px
+    &__name
+        width: 236px
+        padding-right: 50px
+        font-size: 14px
+        font-weight: 600
+        line-height: 22px
+    &__text
+        width: calc(100% - 236px)
+        font-size: 14px
+        font-weight: 300
+        line-height: 22px
+        p
+            margin: 0
+            margin-bottom: 22px
+        ul
+            margin: 0
+            padding: 0
+            list-style-type: none
+            li
+                position: relative
+                margin-bottom: 6px
+                padding-left: 12px
+                &::before
+                    content: ""
+                    display: block
+                    width: 2px
+                    height: 2px
+                    border-radius: 50%
+                    position: absolute
+                    left: 0px
+                    top: 10px
+                    background: #000
+    &__bot
+        border-top: 1px solid #D9D9D9
+        padding: 26px 44px
+        p
+            font-size: 14px
+            font-weight: 400
+            line-height: 22px
+            margin: 0
+            b
+                font-weight: 600
+            a
+                text-decoration: none
+                color: #000
+    &__adr
+        display: flex
+        align-items: flex-start
+        grid-gap: 12px
+        margin: 22px 0
+        svg
+            margin-top: 2px
+        p
+            width: 630px
+            max-width: calc(100% - 28px)
+    &__phone
+        display: flex
+        align-items: flex-start
+        grid-gap: 13px
+        svg
+            margin-top: 4px
+        p
+            max-width: calc(100% - 28px)
 @media(max-width: 1199px)
     .news
         &-top
@@ -230,6 +356,20 @@
                 .news__blog
                     &:last-child
                         display: none
+@media(max-width: 767px)
+    .vac
+        &__top
+            display: block
+        &__main
+            max-width: 100%
+            margin-bottom: 14px
+        &__line
+            display: block
+        &__name
+            width: 100%
+            margin-bottom: 11px
+        &__text
+            width: 100%
 @media(max-width: 575px)
     .error
         padding: 40px 0
@@ -284,3 +424,21 @@
                     &:last-child
                         display: block
                         border-radius: 0 0 20px 20px
+    .vac
+        &__title
+            font-size: 20px
+            font-weight: 600
+            line-height: 28px
+            margin-bottom: 26px
+        &__top
+            padding: 20px 25px
+        &__name
+            font-size: 14px
+            padding-right: 0
+        &__line
+            margin-bottom: 19px
+        &__cont
+            padding: 25px
+            padding-bottom: 6px
+        &__bot
+            padding: 25px
