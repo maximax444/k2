@@ -507,3 +507,13 @@ $('.vac__top').on('click', function () {
         $(this).next('.vac__drop').stop().slideUp();
     }
 });
+$('.opros__top').on('click', function () {
+    $(this).closest('.opros__block').toggleClass('active');
+    if ($(this).closest('.opros__block').hasClass('active')) {
+        $(this).next('.opros__drop').stop().slideDown();
+        $(this).find('.opros__right').find('span').html('Свернуть');
+    } else {
+        $(this).next('.opros__drop').stop().slideUp();
+        $(this).find('.opros__right').find('span').html('Смотреть подробнее');
+    }
+});
