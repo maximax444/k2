@@ -517,3 +517,36 @@ $('.opros__top').on('click', function () {
         $(this).find('.opros__right').find('span').html('Смотреть подробнее');
     }
 });
+const swiper404 = new Swiper('.create__slider', {
+
+    slidesPerView: 3,
+    spaceBetween: 16,
+    loop: true,
+    // Navigation arrows
+    navigation: {
+        nextEl: '.manuf__next',
+        prevEl: '.manuf__prev',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 8
+        },
+        // when window width is >= 480px
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 8
+        },
+        // when window width is >= 480px
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 8
+        },
+        // when window width is >= 640px
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 16
+        }
+    }
+});
