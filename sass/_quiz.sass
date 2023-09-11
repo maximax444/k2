@@ -1,0 +1,207 @@
+.quiz
+    &__block
+        border-radius: 20px
+        border: 1px solid #D9D9D9
+        display: none
+        &.active
+            display: block
+    &__top
+        padding: 25px 45px
+        border-bottom: 1px solid #D9D9D9
+        font-size: 14px
+        font-weight: 300
+        line-height: 22px
+        b
+            display: block
+            margin-bottom: 16px
+            font-size: 16px
+            font-weight: 600
+    &__bot
+        padding: 33px 45px
+        display: flex
+        align-items: center
+        grid-gap: 19px
+    &__prev
+        background: #A2B3D1
+        border: 1px solid #A2B3D1
+    &__main
+        padding: 30px 45px
+        padding-bottom: 0
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 25px 23px
+    &__field
+        width: 100%
+        font-size: 14px
+        font-weight: 400
+        input
+            display: block
+            margin-top: 18px
+            width: 100%
+            border-radius: 5px
+            border: 1px solid #D9D9D9
+            padding: 14px 25px
+        &.big
+            grid-column: 1/3
+        &.err
+            input
+                border: 1px solid #CD072D
+        &-wrap
+            display: flex
+            justify-content: space-between
+            align-items: flex-end
+            input
+                width: calc(50% - 11px)
+        &-gray
+            width: calc(50% - 11px)
+            color: #868484
+            font-size: 12px
+            font-weight: 300
+            line-height: 20px
+            padding-bottom: 2px
+    &__subtitle
+        margin-top: 40px
+        margin-bottom: 30px
+        font-size: 16px
+        font-weight: 600
+        &.err
+            color: #CD072D
+    &__last
+        padding: 55px 20px
+        text-align: center
+        .overlay-thx__text
+            max-width: 320px
+            margin: 0 auto
+    &__checks
+        label
+            display: flex
+            margin-bottom: 16px
+            align-items: flex-start
+            grid-gap: 17px
+            position: relative
+            max-width: calc(100% - 340px)
+            cursor: pointer
+            input
+                position: absolute
+                top: 0
+                left: 0
+                width: 0
+                height: 0
+                overflow: hidden
+                visibility: hidden
+                opacity: 0
+                &+span
+                    width: 21px
+                    height: 21px
+                    border-radius: 4px
+                    border: 1px solid #D9D9D9
+                    margin-bottom: 0
+                &:checked + span
+                    background: url('../img/check.svg') center no-repeat
+            p
+                font-size: 12px
+                line-height: 22px
+                margin: 0
+                font-weight: 300
+                max-width: calc(100% - 38px)
+                a
+                    color: #000000
+                    text-decoration: none
+                    border-bottom: 1px solid #000
+                    &:hover
+                        color: #CD072D
+                        border-bottom: 1px solid #CD072D
+    &__select
+        font-size: 14px
+        font-weight: 400
+        max-width: 400px
+        &.err
+            .quiz__select-top
+                border: 1px solid #CD072D
+        &-wrap
+            display: flex
+            align-items: center
+            grid-gap: 30px
+            padding-top: 18px
+        &-gray
+            color: #868484
+            font-size: 12px
+            font-weight: 300
+            line-height: 20px
+            width: 170px
+        &-main
+            width: 155px
+            position: relative
+        &-top
+            width: 100%
+            padding: 14px 25px
+            border-radius: 5px
+            border: 1px solid #D9D9D9
+            color: #868484
+            font-size: 12px
+            font-weight: 400
+            position: relative
+            cursor: pointer
+            svg
+                position: absolute
+                top: 19px
+                right: 24px
+                transition: all 0.3s
+            &.active
+                border-radius: 5px 5px 0 0
+                border-bottom: 1px solid transparent
+                svg
+                    transform: rotate(180deg)
+        &-drop
+            position: absolute
+            top: calc(100% - 1px)
+            left: 0
+            width: 100%
+            border-radius: 0 0 5px 5px
+            border: 1px solid #D9D9D9
+            border-top: 0
+            background-color: #fff
+            z-index: 2
+            display: none
+            overflow: hidden
+        &-block
+            padding: 0px 24px
+            font-size: 14px
+            line-height: 24px
+            cursor: pointer
+            &:hover
+                background: #F2F2F2
+                color: #CD072D
+@media(max-width: 1199px)
+    .quiz
+        &__checks
+            label
+                max-width: 100%
+        &__wrap
+            grid-template-columns: repeat(1, 1fr)
+        &__field.big
+            grid-column: auto
+@media(max-width: 575px)
+    .quiz
+        &__top
+            padding: 20px 25px
+        &__main
+            padding: 20px 25px
+            padding-bottom: 0
+        &__bot
+            padding: 20px 25px
+        &__select
+            &-wrap
+                flex-wrap: wrap
+                grid-gap: 10px
+        &__field
+            &-wrap
+                grid-gap: 10px
+                flex-wrap: wrap
+                input
+                    width: 100%
+            &-gray
+                width: 100%
+        &__bot
+            flex-wrap: wrap

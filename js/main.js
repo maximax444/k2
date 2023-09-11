@@ -1,31 +1,34 @@
-ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-        center: [59.777533, 30.177429],
-        zoom: 10
-    }, {
-        searchControlProvider: 'yandex#search'
-    }),
-
-
-        myPlacemark = new ymaps.Placemark([59.777533, 30.177429], {
-            hintContent: 'улица Сименса, 2/4, территория Южная часть производственной зоны Горелово, Виллозское городское поселение, Ломоносовский район, Ленинградская область ',
-            balloonContent: 'улица Сименса, 2/4, территория Южная часть производственной зоны Горелово, Виллозское городское поселение, Ломоносовский район, Ленинградская область '
+if ($('#map').length) {
+    ymaps.ready(function () {
+        var myMap = new ymaps.Map('map', {
+            center: [59.777533, 30.177429],
+            zoom: 10
         }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#image',
-            // Своё изображение иконки метки.
-            iconImageHref: 'img/map.png',
-            // Размеры метки.
-            iconImageSize: [85, 73],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-28, -73]
-        });
+            searchControlProvider: 'yandex#search'
+        }),
 
-    myMap.geoObjects
-        .add(myPlacemark);
-});
+
+            myPlacemark = new ymaps.Placemark([59.777533, 30.177429], {
+                hintContent: 'улица Сименса, 2/4, территория Южная часть производственной зоны Горелово, Виллозское городское поселение, Ломоносовский район, Ленинградская область ',
+                balloonContent: 'улица Сименса, 2/4, территория Южная часть производственной зоны Горелово, Виллозское городское поселение, Ломоносовский район, Ленинградская область '
+            }, {
+                // Опции.
+                // Необходимо указать данный тип макета.
+                iconLayout: 'default#image',
+                // Своё изображение иконки метки.
+                iconImageHref: 'img/map.png',
+                // Размеры метки.
+                iconImageSize: [85, 73],
+                // Смещение левого верхнего угла иконки относительно
+                // её "ножки" (точки привязки).
+                iconImageOffset: [-28, -73]
+            });
+        myMap.geoObjects
+            .add(myPlacemark);
+
+    });
+}
+
 $('.struct__block').each(function () {
     $(this).on('mouseover', function () {
         $('.struct__img').eq($(this).index()).addClass('active');
@@ -385,7 +388,7 @@ $('.home-catalog__count input').bind("change keyup input click", function () {
 });
 
 
-const swiper32 = new Swiper('.home-catalog__slider', {
+const swiper32 = new Swiper('.home-catalog .home-catalog__slider', {
 
     slidesPerView: 2,
     spaceBetween: 16,
@@ -410,6 +413,38 @@ const swiper32 = new Swiper('.home-catalog__slider', {
         // when window width is >= 640px
         992: {
             slidesPerView: 2
+        },
+        // when window width is >= 640px
+        1200: {
+            slidesPerView: 2
+        }
+    }
+});
+const swiper132 = new Swiper('.catalog .home-catalog__slider', {
+
+    slidesPerView: 2,
+    spaceBetween: 16,
+    loop: true,
+    navigation: {
+        nextEl: '.home-catalog__next',
+        prevEl: '.home-catalog__prev',
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1
+        },
+        // when window width is >= 480px
+        576: {
+            slidesPerView: 1
+        },
+        // when window width is >= 480px
+        768: {
+            slidesPerView: 1
+        },
+        // when window width is >= 640px
+        992: {
+            slidesPerView: 1
         },
         // when window width is >= 640px
         1200: {
@@ -517,6 +552,14 @@ $('.opros__top').on('click', function () {
         $(this).find('.opros__right').find('span').html('Смотреть подробнее');
     }
 });
+$('.faq__top').on('click', function () {
+    $(this).toggleClass('active');
+    if ($(this).hasClass('active')) {
+        $(this).next('.faq__drop').stop().slideDown();
+    } else {
+        $(this).next('.faq__drop').stop().slideUp();
+    }
+});
 const swiper404 = new Swiper('.create__slider', {
 
     slidesPerView: 3,
@@ -548,5 +591,173 @@ const swiper404 = new Swiper('.create__slider', {
             slidesPerView: 3,
             spaceBetween: 16
         }
+    }
+});
+
+$('.quality__select').on('click', function () {
+    $(this).find('.quality__select-top').toggleClass('active');
+    if ($(this).find('.quality__select-top').hasClass('active')) {
+        $(this).find('.quality__select-drop').stop().slideDown();
+    } else {
+        $(this).find('.quality__select-drop').stop().slideUp();
+    }
+});
+$('.quality__select-block').on('click', function () {
+    $(this).closest('.quality__select').find('.quality__select-top span').html($(this).html());
+    $(this).closest('.quality__select').find('input').val($(this).html());
+});
+$('body').on('mousedown', function (e) {
+    if (!(($(e.target).parents('.quality__select').length) || ($(e.target).hasClass('quality__select')))) {
+        $('.quality__select-drop').stop().slideUp();
+        $('.quality__select-top').removeClass('active');
+    }
+});
+
+$('.quiz__select').on('click', function () {
+    $(this).find('.quiz__select-top').toggleClass('active');
+    if ($(this).find('.quiz__select-top').hasClass('active')) {
+        $(this).find('.quiz__select-drop').stop().slideDown();
+    } else {
+        $(this).find('.quiz__select-drop').stop().slideUp();
+    }
+});
+$('.quiz__select-block').on('click', function () {
+    $(this).closest('.quiz__select').find('.quiz__select-top span').html($(this).html());
+    $(this).closest('.quiz__select').find('input').val($(this).html());
+    $(this).closest('.quiz__select').removeClass('err');
+});
+$('body').on('mousedown', function (e) {
+    if (!(($(e.target).parents('.quiz__select').length) || ($(e.target).hasClass('quiz__select')))) {
+        $('.quiz__select-drop').stop().slideUp();
+        $('.quiz__select-top').removeClass('active');
+    }
+});
+
+function checkQuizFields() {
+    var wrap = $('.quiz__block.active');
+    var sels = wrap.find('.quiz__select');
+    var inps = wrap.find('.quiz__field');
+    var checks = wrap.find('.quiz__checks');
+    let errors = 0;
+    if (sels.length) {
+        sels.each(function () {
+            if ($(this).find('input').val() == '') {
+                $(this).addClass('err');
+                errors++;
+            }
+        });
+    }
+    if (checks.length) {
+        let checksCliked = 0;
+        checks.find('label').each(function () {
+            if ($(this).find('input:checked').length) {
+                checksCliked++;
+            }
+        });
+        console.log(checksCliked);
+        if (checksCliked == 0) {
+            errors++;
+            checks.prev('.quiz__subtitle').addClass('err');
+        }
+    }
+    if (inps.length) {
+        inps.each(function () {
+            if ($(this).find('input').val() == '' && $(this).find('input').attr('required')) {
+                $(this).addClass('err');
+                errors++;
+            }
+        });
+    }
+    if (errors == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+$('.quiz__field input').on('change', function () {
+    if ($(this).val() != '') {
+        $(this).closest('.quiz__field').removeClass('err');
+    } else {
+
+        $(this).closest('.quiz__field').addClass('err');
+    }
+});
+$('.quiz__checks input').on('change', function () {
+    $(this).closest('.quiz__checks').prev('.quiz__subtitle').removeClass('err');
+});
+$('.quiz__next').on('click', function () {
+    if (checkQuizFields()) {
+        var curr = $('.quiz__block.active');
+        curr.next('.quiz__block').addClass('active');
+        curr.removeClass('active');
+    }
+});
+$('.quiz__prev').on('click', function () {
+    var curr = $('.quiz__block.active');
+    curr.prev('.quiz__block').addClass('active');
+    curr.removeClass('active');
+});
+$('.quiz').on('submit', function (e) {
+    e.preventDefault();
+    if (checkQuizFields()) {
+        var curr = $('.quiz__block.active');
+        curr.next('.quiz__block').addClass('active');
+        curr.removeClass('active');
+    }
+});
+
+$('.prod-aside li').each(function () {
+    $(this).on('mouseover', function () {
+        $(this).find('.prod-aside__drop').stop().slideDown();
+    });
+    $(this).on('mouseout', function () {
+        $(this).find('.prod-aside__drop').stop().slideUp();
+    });
+});
+
+
+$(window).scroll(function () {
+    var target = $(this).scrollTop();
+    if (target <= 400) {
+        $('.swim').removeClass('active');
+    } else {
+        $('.swim').addClass('active');
+    }
+});
+$('.swim__search').on('click', function (e) {
+    e.preventDefault();
+    $('.swim__search-drop').toggleClass('active');
+});
+$('.swim__search-close').on('click', function (e) {
+    e.preventDefault();
+    $('.swim__search-drop').removeClass('active');
+});
+
+$('.filters__title').on('click', function () {
+    $(this).toggleClass('active');
+    if ($(this).hasClass('active')) {
+        $(this).next('.filters__wrap').stop().slideDown();
+        $(this).find('span').html('Скрыть фильтры');
+    } else {
+        $(this).next('.filters__wrap').stop().slideUp();
+        $(this).find('span').html('Показать фильтры');
+    }
+});
+
+$('.filters__top').on('click', function () {
+    $(this).toggleClass('active');
+    if ($(this).hasClass('active')) {
+        $(this).next('.filters__drop').stop().slideDown();
+    } else {
+        $(this).next('.filters__drop').stop().slideUp();
+    }
+});
+
+$('.catalog__filters').on('click', function () {
+    $(this).toggleClass('active');
+    if ($(this).hasClass('active')) {
+        $('.catalog__filters-wrap').stop().slideDown();
+    } else {
+        $('.catalog__filters-wrap').stop().slideUp();
     }
 });

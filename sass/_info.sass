@@ -42,6 +42,104 @@
     &2__main
         width: 600px
         max-width: calc(100% - 220px)
+.bullin
+    &__down
+        text-decoration: none
+        display: flex
+        align-items: center
+        grid-gap: 14px
+        color: #CD072D
+        font-size: 14px
+        margin-bottom: 26px
+    h2
+        margin-top: 0
+        margin-bottom: 32px
+        font-family: 'Montserrat'
+        font-size: 24px
+        font-weight: 600
+        line-height: 32px
+        width: 750px
+        max-width: 100%
+    h3
+        font-size: 16px
+        font-weight: 600
+        line-height: 22px
+        margin-top: 0
+        margin-bottom: 22px
+    p
+        font-size: 14px
+        font-weight: 300
+        line-height: 22px
+        margin-top: 0
+        margin-bottom: 22px
+    a
+        color: #000
+    ul
+        margin: 0
+        padding: 0
+        list-style-type: none
+        margin-bottom: 34px
+        li
+            position: relative
+            padding-left: 20px
+            margin-top: 6px
+            font-size: 14px
+            font-weight: 300
+            line-height: 22px
+            &::before
+                content: ""
+                display: block
+                width: 2px
+                height: 2px
+                border-radius: 50%
+                background: #000
+                position: absolute
+                top: 10px
+                left: 8px
+    table
+        border-radius: 5px
+        border: 1px solid #D9D9D9
+        border-collapse: collapse
+        text-align: left
+        margin-top: 45px
+        margin-bottom: 45px
+        tr
+            border-bottom: 1px solid #D9D9D9
+        th
+            background: #FAF8F9
+            padding: 16px 30px
+            font-size: 14px
+            font-style: normal
+            font-weight: 600
+            line-height: 22px
+            border: 1px solid #D9D9D9
+            &:nth-child(1)
+                text-align: left
+        td
+            border: 1px solid #D9D9D9
+            font-size: 14px
+            font-weight: 400
+            line-height: 22px
+            padding: 10px 30px
+            max-width: 370px
+            &:nth-child(1)
+                text-align: left
+    &__cap
+        font-size: 12px
+        margin-bottom: 32px
+        margin-top: 0
+        font-weight: 600
+        line-height: 22px
+    figure
+        margin: 0
+        margin-bottom: 24px
+        img
+            max-width: 100%
+        figcaption
+            font-size: 12px
+            font-style: normal
+            font-weight: 600
+            line-height: 22px
 .opros
     &__top
         padding: 24px 45px
@@ -226,6 +324,147 @@
                 position: relative
                 padding-left: 20px
                 margin-top: 6px
+                &::before
+                    content: ""
+                    display: block
+                    width: 2px
+                    height: 2px
+                    border-radius: 50%
+                    background: #000
+                    position: absolute
+                    top: 10px
+                    left: 8px
+.condwork
+    &__title
+        max-width: 550px
+        margin-top: 0
+        margin-bottom: 20px
+        font-size: 24px
+        font-weight: 600
+    &__top
+        a
+            color: #000
+            &:hover
+                color: #CD072D
+        p
+            margin-top: 0
+            margin-bottom: 23px
+            font-size: 14px
+            font-weight: 400
+        ul
+            margin: 0
+            list-style-type: none
+            padding: 0
+            margin-bottom: 23px
+            li
+                position: relative
+                padding-left: 20px
+                margin-top: 6px
+                font-size: 14px
+                font-weight: 300
+                line-height: 22px
+                a
+                    color: #CD072D
+                &::before
+                    content: ""
+                    display: block
+                    width: 2px
+                    height: 2px
+                    border-radius: 50%
+                    background: #000
+                    position: absolute
+                    top: 10px
+                    left: 8px
+    &__num
+        display: flex
+        align-items: flex-start
+        grid-gap: 14px
+        margin-bottom: 20px
+        span
+            width: 28px
+            height: 28px
+            border-radius: 4px
+            background: #CD072D
+            color: #FFF
+            text-align: center
+            font-size: 14px
+            font-weight: 600
+            display: flex
+            align-items: center
+            justify-content: center
+            padding-left: 1px
+            padding-bottom: 1px
+        p
+            width: calc(100% - 42px)
+            padding-top: 2px
+            margin: 0
+            font-size: 16px
+            font-weight: 600
+    &__main
+        padding-top: 33px
+        padding-bottom: 9px
+        border-top: 1px solid #D9D9D9
+        margin-top: 38px
+        &-title
+            margin-top: 0
+            margin-bottom: 20px
+            font-size: 24px
+            font-weight: 600
+        &-subtitle
+            margin-top: 0
+            margin-bottom: 20px
+            font-size: 16px
+            font-weight: 600
+        ul
+            margin-top: 0
+            margin-bottom: 20px
+            padding: 0
+            list-style-type: none
+            li
+                position: relative
+                padding-left: 20px
+                margin-top: 6px
+                font-size: 14px
+                font-weight: 300
+                line-height: 22px
+                &::before
+                    content: ""
+                    display: block
+                    width: 2px
+                    height: 2px
+                    border-radius: 50%
+                    background: #000
+                    position: absolute
+                    top: 10px
+                    left: 8px
+        p
+            margin-top: 0
+            margin-bottom: 33px
+            font-size: 14px
+    &__bot
+        padding-top: 33px
+        border-top: 1px solid #D9D9D9
+        &-title
+            margin-top: 0
+            margin-bottom: 26px
+            font-size: 24px
+            font-weight: 600
+        p
+            margin-top: 0
+            margin-bottom: 20px
+            font-size: 14px
+            line-height: 22px
+        ul
+            margin: 0
+            list-style-type: none
+            padding: 0
+            li
+                position: relative
+                padding-left: 20px
+                margin-top: 6px
+                font-size: 14px
+                font-weight: 300
+                line-height: 22px
                 &::before
                     content: ""
                     display: block
@@ -460,6 +699,25 @@ p.imp__bold
             max-width: 100%
             width: 100%
             padding-bottom: 13px
+    .bullin
+        h2
+            font-size: 20px
+            line-height: 28px
+            margin-bottom: 23px
+        table
+            margin: 20px -20px
+            padding: 0 20px
+            margin-bottom: 10px
+            padding-bottom: 10px
+            display: block
+            overflow-x: scroll
+            border: 0
+            tbody
+                display: table
+            td, th
+                min-width: 40vw
+                padding-left: 13px
+                padding-right: 13px
     .opros
         &__top
             display: block
@@ -510,6 +768,25 @@ p.imp__bold
             line-height: 28px
         &__block
             padding: 20px 25px
+    .condwork
+        &__title
+            margin-bottom: 19px
+            font-size: 20px
+            line-height: 28px
+        &__top
+            ul
+                padding-left: 40px
+            &>p:last-child
+                padding-left: 42px
+        &__main
+            padding-top: 20px
+            padding-bottom: 3px
+            p
+                margin-bottom: 20px
+        &__bot
+            padding-top: 17px
+            &-title
+                margin-bottom: 19px
     .info
         &__block
             padding: 25px

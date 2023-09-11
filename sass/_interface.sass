@@ -23,6 +23,34 @@
         padding-left: 20px
         padding-right: 20px
         margin: auto
+table
+    border-radius: 5px
+    border: 1px solid #D9D9D9
+    border-collapse: collapse
+    text-align: left
+    margin-top: 25px
+    margin-bottom: 25px
+    tr
+        border-bottom: 1px solid #D9D9D9
+    th
+        background: #FAF8F9
+        padding: 16px 30px
+        font-size: 14px
+        font-style: normal
+        font-weight: 600
+        line-height: 22px
+        border: 1px solid #D9D9D9
+        &:nth-child(1)
+            text-align: left
+    td
+        border: 1px solid #D9D9D9
+        font-size: 14px
+        font-weight: 400
+        line-height: 22px
+        padding: 10px 30px
+        max-width: 370px
+        &:nth-child(1)
+            text-align: left
 .btn
     display: inline-block
     border-radius: 5px
@@ -36,6 +64,7 @@
     line-height: normal
     transition: all 0.3s
     text-decoration: none
+    cursor: pointer
     &:hover
         background: transparent
         color: #000
@@ -64,6 +93,7 @@
     border-radius: 4px
     cursor: pointer
     transition: all 0.3s
+    user-select: none
     path
         transition: all 0.3s
     &:hover
@@ -86,8 +116,8 @@
             margin: 0
             list-style-type: none
             padding: 0
-            top: 20px
-            a
+            top: 75px
+            &>li>a
                 display: block
                 border-top: 1px solid #D9D9D9
                 padding: 18px 20px 18px 32px
@@ -387,7 +417,7 @@
 .main
     position: relative
     padding: 126px 0
-    &>img
+    &>video
         position: absolute
         top: 0
         left: 0
@@ -717,6 +747,111 @@
         &:hover
             path
                 fill: #CD072D
+.swim
+    background: #FAF8F9
+    position: fixed
+    top: -70px
+    left: 0
+    width: 100%
+    z-index: 8
+    transition: all 0.5s
+    &.active
+        top: 0
+    &__wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+    .nav__menu
+        width: auto
+        &>li>a
+            padding: 22px 18px
+    &__right
+        display: flex
+        align-items: center
+        grid-gap: 17px
+        path
+            transition: all 0.3s
+        &>a, &> span
+            display: flex
+            height: 63px
+            align-items: center
+            &:hover
+                path
+                    fill: #CD072D
+    &__phone
+        position: relative
+        padding-left: 17px
+        &:hover
+            .header-phone__drop
+                display: block
+    &__search
+        &-drop
+            background: #FAF8F9
+            width: 100%
+            position: fixed
+            top: -70px
+            left: 0
+            z-index: 7
+            transition: all 0.5s
+            &.active
+                top: 63px
+        &-wrap
+            display: flex
+            align-items: center
+            justify-content: space-between
+            padding: 10px 0
+            form
+                width: calc(100% - 36px)
+                position: relative
+                input
+                    width: 100%
+                    padding: 14px 54px
+                    border-radius: 5px
+                    font-size: 12px
+                    border: 1px solid #D9D9D9
+        &-btn
+            height: 100%
+            width: 50px
+            position: absolute
+            top: 0
+            left: 0
+            background: transparent
+            border: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            path
+                transition: all 0.3s
+            &:hover
+                path
+                    fill: #CD072D
+        &-reset
+            height: 18px
+            width: 18px
+            border-radius: 50%
+            background: #D9D9D9
+            position: absolute
+            top: 14px
+            right: 10px
+            border: 0
+            display: flex
+            align-items: center
+            cursor: pointer
+            justify-content: center
+            transition: all 0.3s
+            &:hover
+                background: #CD072D
+        &-close
+            cursor: pointer
+            display: flex
+            align-items: center
+            padding: 5px 0px
+            path
+                transition: all 0.3s
+            &:hover
+                path
+                    fill: #CD072D
 @media(min-width: 768px)
     .header-phone:hover .header-phone__drop
         display: block
@@ -737,6 +872,12 @@
         &__menu
             width: 600px
             margin-left: 0
+    .swim
+        .nav__menu
+            li:first-child
+                display: none
+            &>li>a
+                padding: 22px 15px
 @media(max-width: 1199px)
     .footer
         &__menu
@@ -749,6 +890,11 @@
         &__menu
             &>li>a
                 padding: 13px 15px
+    .swim
+        .nav__menu
+            &>li>a
+                font-size: 12px
+                padding: 22px 5px
 @media(max-width: 991px)
     .page
         &__aside
@@ -775,6 +921,9 @@
                 padding: 13px 10px
                 width: 140px
                 font-size: 12px
+    .swim
+        .header__logo
+            display: none
 @media(max-width: 767px)
     .nav
         display: none
@@ -1079,7 +1228,29 @@
             display: none
         &__right
             width: auto
+    .swim
+        padding: 12px 0
+        .nav__menu
+            display: none
+        &__right
+            display: none
+        .header__logo
+            display: flex
 @media(max-width: 575px)
+    table
+        margin: 20px -20px
+        padding: 0 20px
+        margin-bottom: 10px
+        padding-bottom: 10px
+        display: block
+        overflow-x: scroll
+        border: 0
+        tbody
+            display: table
+        td, th
+            min-width: 40vw
+            padding-left: 13px
+            padding-right: 13px
     .pag
         padding-top: 15px
     .page

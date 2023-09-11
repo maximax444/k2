@@ -51,7 +51,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-
+    <script src="//api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&lang=ru-RU"
+        type="text/javascript"></script>
 </head>
 
 <body>
@@ -504,7 +505,215 @@
                 </ul>
                 <h2 class="contacts__title contacts-page__title animate__animated animate__fadeInLeft wow">Где купить
                 </h2>
+                <div class="page__wrap where">
+                    <div class="page__aside">
+                        <ul>
+                            <li><a class="active" href="/where.html">Санкт-Петербург
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                            fill="none">
+                                            <path
+                                                d="M5.84873 5.00002C5.84873 5.17924 5.7803 5.35843 5.64373 5.49507L1.3439 9.79486C1.07038 10.0684 0.626908 10.0684 0.353496 9.79486C0.0800845 9.52145 0.0800845 9.07807 0.353496 8.80452L4.15822 5.00002L0.353629 1.19549C0.0802171 0.921968 0.080217 0.478632 0.353629 0.205242C0.62704 -0.0684128 1.07051 -0.0684128 1.34403 0.205242L5.64386 4.50496C5.78046 4.64166 5.84873 4.82086 5.84873 5.00002Z"
+                                                fill="#A2B3D1" />
+                                        </svg>
+                                    </span>
+                                </a></li>
+                            <li><a href="/where.html">Москва
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                            fill="none">
+                                            <path
+                                                d="M5.84873 5.00002C5.84873 5.17924 5.7803 5.35843 5.64373 5.49507L1.3439 9.79486C1.07038 10.0684 0.626908 10.0684 0.353496 9.79486C0.0800845 9.52145 0.0800845 9.07807 0.353496 8.80452L4.15822 5.00002L0.353629 1.19549C0.0802171 0.921968 0.080217 0.478632 0.353629 0.205242C0.62704 -0.0684128 1.07051 -0.0684128 1.34403 0.205242L5.64386 4.50496C5.78046 4.64166 5.84873 4.82086 5.84873 5.00002Z"
+                                                fill="#A2B3D1" />
+                                        </svg>
+                                    </span>
+                                </a></li>
+                            <li><a href="/where.html">Новосибирск
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                            fill="none">
+                                            <path
+                                                d="M5.84873 5.00002C5.84873 5.17924 5.7803 5.35843 5.64373 5.49507L1.3439 9.79486C1.07038 10.0684 0.626908 10.0684 0.353496 9.79486C0.0800845 9.52145 0.0800845 9.07807 0.353496 8.80452L4.15822 5.00002L0.353629 1.19549C0.0802171 0.921968 0.080217 0.478632 0.353629 0.205242C0.62704 -0.0684128 1.07051 -0.0684128 1.34403 0.205242L5.64386 4.50496C5.78046 4.64166 5.84873 4.82086 5.84873 5.00002Z"
+                                                fill="#A2B3D1" />
+                                        </svg>
+                                    </span>
+                                </a></li>
+                            <li><a href="/where.html">Усть-Каменогорск,
+                                    Казахстан
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                            fill="none">
+                                            <path
+                                                d="M5.84873 5.00002C5.84873 5.17924 5.7803 5.35843 5.64373 5.49507L1.3439 9.79486C1.07038 10.0684 0.626908 10.0684 0.353496 9.79486C0.0800845 9.52145 0.0800845 9.07807 0.353496 8.80452L4.15822 5.00002L0.353629 1.19549C0.0802171 0.921968 0.080217 0.478632 0.353629 0.205242C0.62704 -0.0684128 1.07051 -0.0684128 1.34403 0.205242L5.64386 4.50496C5.78046 4.64166 5.84873 4.82086 5.84873 5.00002Z"
+                                                fill="#A2B3D1" />
+                                        </svg>
+                                    </span>
+                                </a></li>
+                        </ul>
+
+                    </div>
+                    <div class="page__content">
+                        <h2 class="where__title">Дистрибьюторы и дилеры <span>(Санкт-Петербург)</span></h2>
+                        <div class="where__wrap">
+                            <div class="where__block">
+                                <div class="where__name">АО «Хакель»</div>
+                                <a href="" class="where__onmap">Показать на карте
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6"
+                                        fill="none">
+                                        <path
+                                            d="M11.89 2.73492L10.015 0.859922C9.86844 0.713359 9.63125 0.713359 9.48469 0.859922C9.33813 1.00648 9.33813 1.24367 9.48469 1.39023L10.7197 2.62492H0.375C0.167812 2.62492 0 2.79273 0 2.99992C0 3.20711 0.167812 3.37492 0.375 3.37492H10.7197L9.48469 4.60992C9.33813 4.75648 9.33813 4.99367 9.48469 5.14023C9.63125 5.2868 9.86844 5.2868 10.015 5.14023L11.89 3.26523C12.0366 3.11867 12.0366 2.88117 11.89 2.73492Z"
+                                            fill="#CD072D" />
+                                    </svg>
+                                </a>
+                                <div class="where__line">
+                                    <div class="where__adres">
+                                        <span><img src="img/where-loc.svg" alt=""></span>
+                                        <p>188510, Ленинградская область, Ломоносовский муниципальный район, Виллозское
+                                            городское поселение, тер. Южная часть производственной зоны Горелово, улица
+                                            Сименса, д. 2/4, пом.314</p>
+                                    </div>
+                                    <div class="where__contacts">
+                                        <span><img src="img/where-cont.svg" alt=""></span>
+                                        <p>
+                                            <a href="">Тел.: 8 (800) 333-28-29</a>
+                                            <a href="">info@hakel.ru</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="where__block">
+                                <div class="where__name">АО «ТЭЗИЗ»</div>
+                                <a href="" class="where__onmap">Показать на карте
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6"
+                                        fill="none">
+                                        <path
+                                            d="M11.89 2.73492L10.015 0.859922C9.86844 0.713359 9.63125 0.713359 9.48469 0.859922C9.33813 1.00648 9.33813 1.24367 9.48469 1.39023L10.7197 2.62492H0.375C0.167812 2.62492 0 2.79273 0 2.99992C0 3.20711 0.167812 3.37492 0.375 3.37492H10.7197L9.48469 4.60992C9.33813 4.75648 9.33813 4.99367 9.48469 5.14023C9.63125 5.2868 9.86844 5.2868 10.015 5.14023L11.89 3.26523C12.0366 3.11867 12.0366 2.88117 11.89 2.73492Z"
+                                            fill="#CD072D" />
+                                    </svg>
+                                </a>
+                                <div class="where__line">
+                                    <div class="where__adres">
+                                        <span><img src="img/where-loc.svg" alt=""></span>
+                                        <p>188510, Ленинградская область, Ломоносовский муниципальный район, Виллозское
+                                            городское поселение, тер. Южная часть производственной зоны Горелово, улица
+                                            Сименса, д. 2/4, пом.314</p>
+                                    </div>
+                                    <div class="where__contacts">
+                                        <span><img src="img/where-cont.svg" alt=""></span>
+                                        <p>
+                                            <a href="">Тел.: +7 (812) 207-47-06</a>
+                                            <a href="">mail@teziz.ru</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="where__block">
+                                <div class="where__name">ЭТМ, ООО "ТД" Электротехмонтаж"</div>
+                                <a href="" class="where__onmap">Показать на карте
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6"
+                                        fill="none">
+                                        <path
+                                            d="M11.89 2.73492L10.015 0.859922C9.86844 0.713359 9.63125 0.713359 9.48469 0.859922C9.33813 1.00648 9.33813 1.24367 9.48469 1.39023L10.7197 2.62492H0.375C0.167812 2.62492 0 2.79273 0 2.99992C0 3.20711 0.167812 3.37492 0.375 3.37492H10.7197L9.48469 4.60992C9.33813 4.75648 9.33813 4.99367 9.48469 5.14023C9.63125 5.2868 9.86844 5.2868 10.015 5.14023L11.89 3.26523C12.0366 3.11867 12.0366 2.88117 11.89 2.73492Z"
+                                            fill="#CD072D" />
+                                    </svg>
+                                </a>
+                                <div class="where__line">
+                                    <div class="where__adres">
+                                        <span><img src="img/where-loc.svg" alt=""></span>
+                                        <p>191144, Г. Санкт-Петербург, ул. 7-я Советская, д. 44 литера Б, этаж 6, ком.
+                                            118</p>
+                                    </div>
+                                    <div class="where__contacts">
+                                        <span><img src="img/where-cont.svg" alt=""></span>
+                                        <p>
+                                            <a href="">Тел.: 8 (800) 775-17-71</a>
+                                            <a href="">info@hakel.ru</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="where-mark">
+                            <div class="where-mark__cont">
+                                <div class="where-mark__title">+ Также нашу продукцию можно купить на популярных
+                                    маркет-плейсах</div>
+                                <p class="where-mark__descr">Посетите наши магазины на OZON и Яндекс.Маркет</p>
+                            </div>
+                            <div class="where-mark__links">
+                                <a href="" class="where-mark__link">
+                                    <img src="img/where-mark1.svg" alt="">
+                                    <span class="where-mark__arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9"
+                                            fill="none">
+                                            <path
+                                                d="M17.7938 3.86167C17.7936 3.86145 17.7934 3.86121 17.7931 3.861L14.1192 0.204748C13.8439 -0.0691546 13.3988 -0.0681353 13.1248 0.207138C12.8508 0.482376 12.8519 0.92756 13.1271 1.2015L15.5938 3.65625H0.703125C0.314789 3.65625 0 3.97104 0 4.35937C0 4.74771 0.314789 5.0625 0.703125 5.0625H15.5938L13.1272 7.51725C12.8519 7.79118 12.8509 8.23637 13.1248 8.51161C13.3988 8.78692 13.844 8.78786 14.1192 8.514L17.7932 4.85775C17.7934 4.85754 17.7936 4.85729 17.7938 4.85708C18.0692 4.58223 18.0683 4.1356 17.7938 3.86167Z"
+                                                fill="#A2B3D1" />
+                                        </svg>
+                                    </span>
+                                </a>
+                                <a href="" class="where-mark__link">
+                                    <img src="img/where-mark2.svg" alt="">
+                                    <span class="where-mark__arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="9" viewBox="0 0 18 9"
+                                            fill="none">
+                                            <path
+                                                d="M17.7938 3.86167C17.7936 3.86145 17.7934 3.86121 17.7931 3.861L14.1192 0.204748C13.8439 -0.0691546 13.3988 -0.0681353 13.1248 0.207138C12.8508 0.482376 12.8519 0.92756 13.1271 1.2015L15.5938 3.65625H0.703125C0.314789 3.65625 0 3.97104 0 4.35937C0 4.74771 0.314789 5.0625 0.703125 5.0625H15.5938L13.1272 7.51725C12.8519 7.79118 12.8509 8.23637 13.1248 8.51161C13.3988 8.78692 13.844 8.78786 14.1192 8.514L17.7932 4.85775C17.7934 4.85754 17.7936 4.85729 17.7938 4.85708C18.0692 4.58223 18.0683 4.1356 17.7938 3.86167Z"
+                                                fill="#A2B3D1" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div id="map-where" class="contacts__map animate__animated animate__fadeInUp wow"></div>
+            <script>
+                ymaps.ready(function () {
+                    var myMap = new ymaps.Map('map-where', {
+                        center: [59.877533, 30.177429],
+                        zoom: 10
+                    }, {
+                        searchControlProvider: 'yandex#search'
+                    }),
+
+
+                        myPlacemark = new ymaps.Placemark([59.777533, 30.177429], {
+                            hintContent: 'улица Сименса, 2/4, территория Южная часть производственной зоны Горелово, Виллозское городское поселение, Ломоносовский район, Ленинградская область ',
+                            balloonContent: 'улица Сименса, 2/4, территория Южная часть производственной зоны Горелово, Виллозское городское поселение, Ломоносовский район, Ленинградская область '
+                        }, {
+                            // Опции.
+                            // Необходимо указать данный тип макета.
+                            iconLayout: 'default#image',
+                            // Своё изображение иконки метки.
+                            iconImageHref: 'img/map.png',
+                            // Размеры метки.
+                            iconImageSize: [85, 73],
+                            // Смещение левого верхнего угла иконки относительно
+                            // её "ножки" (точки привязки).
+                            iconImageOffset: [-28, -73]
+                        });
+                    myPlacemark2 = new ymaps.Placemark([59.934420, 30.377627], {
+                        hintContent: '191144, Г. Санкт-Петербург, ул. 7-я Советская, д. 44 литера Б, этаж 6, ком. 118 ',
+                        balloonContent: '191144, Г. Санкт-Петербург, ул. 7-я Советская, д. 44 литера Б, этаж 6, ком. 118 '
+                    }, {
+                        // Опции.
+                        // Необходимо указать данный тип макета.
+                        iconLayout: 'default#image',
+                        // Своё изображение иконки метки.
+                        iconImageHref: 'img/map.png',
+                        // Размеры метки.
+                        iconImageSize: [85, 73],
+                        // Смещение левого верхнего угла иконки относительно
+                        // её "ножки" (точки привязки).
+                        iconImageOffset: [-28, -73]
+                    });
+                    myMap.geoObjects
+                        .add(myPlacemark)
+                        .add(myPlacemark2);
+
+                });
+            </script>
         </section>
         <footer class="footer">
             <div class="container">
@@ -785,8 +994,7 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"
-        type="text/javascript"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"
         integrity="sha512-+z66PuMP/eeemN2MgRhPvI3G15FOBbsp5NcCJBojg6dZBEFL0Zoi0PEGkhjubEcQF7N1EpTX15LZvfuw+Ej95Q=="

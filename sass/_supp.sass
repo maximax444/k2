@@ -131,6 +131,75 @@
         padding-right: 60px
         p
             font-weight: 400
+.faq
+    &__search
+        position: relative
+        margin-bottom: 33px
+        input
+            display: block
+            width: 100%
+            padding: 13px 17px
+            font-size: 12px
+            line-height: normal
+            font-weight: 400
+            border-radius: 5px
+            border: 1px solid #D9D9D9
+            padding-right: 60px
+            &::placeholder
+                color: #868484
+        button
+            position: absolute
+            width: 50px
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+            position: absolute
+            top: 0
+            background: transparent
+            border: 0
+            right: 0
+            path
+                transition: all 0.3s
+            &:hover
+                path
+                    fill: #CD072D
+    &__title
+        margin-top: 0
+        margin-bottom: 38px
+        font-family: 'Montserrat'
+        font-size: 24px
+        font-weight: 600
+        line-height: 32px
+    &__block
+        border-bottom: 1px solid #D9D9D9
+        padding: 6px 0
+        &:last-child
+            border-bottom: 0
+    &__top
+        position: relative
+        padding: 26px 45px
+        padding-right: 180px
+        font-size: 14px
+        line-height: 22px
+        svg
+            position: absolute
+            right: 45px
+            top: 50%
+            margin-top: -4px
+            transition: all 0.3s
+        &.active
+            svg
+                transform: rotate(180deg)
+    &__drop
+        display: none
+        padding: 0 45px
+        p
+            margin: 0
+            font-size: 14px
+            font-weight: 300
+            line-height: 22px
 @media(max-width: 575px)
     .supp
         &__title
@@ -168,3 +237,15 @@
         &__block
             width: 100%
             padding-right: 0
+    .faq
+        &__title
+            margin-bottom: 29px
+            font-size: 20px
+            line-height: 28px
+        &__top
+            padding: 15px 25px
+            padding-right: 50px
+            svg
+                right: 20px
+        &__drop
+            padding: 0 25px
